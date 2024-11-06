@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rewe-project/static/css/main.027524fd.css",
+    "main.js": "/rewe-project/static/js/main.3b13372b.js",
+    "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
+    "index.html": "/rewe-project/index.html",
+    "main.027524fd.css.map": "/rewe-project/static/css/main.027524fd.css.map",
+    "main.3b13372b.js.map": "/rewe-project/static/js/main.3b13372b.js.map",
+    "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.027524fd.css",
+    "static/js/main.3b13372b.js"
+  ]
+}
