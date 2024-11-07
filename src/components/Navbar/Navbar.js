@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,22 +13,35 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeScroll);
 
+  const { pathname } = useLocation();
+
   return (
     <div className={scroll ? "moving-navbar" : "navbar"}>
-      <div id="logo-holder">LOGO</div>
-      <div id="link-holder">
-        <Link className="link" to="/">
-          Home
-        </Link>
-        <Link className="link" to="/FamilieSieger">
-          Über uns
-        </Link>
-        <Link className="link" to="/Karriere">
-          Karriere
-        </Link>
-        <Link className="link" to="/Kontakt">
-          Kontakt
-        </Link>
+      <div className="navbar-content">
+        <div className="logo-holder">REWE</div>
+        <div className="link-holder">
+          <NavLink className={pathname === "/" ? "active-link" : "link"} to="/">
+            Home
+          </NavLink>
+          <NavLink
+            className={pathname === "/FamilieSieger" ? "active-link" : "link"}
+            to="/FamilieSieger"
+          >
+            Über uns
+          </NavLink>
+          <NavLink
+            className={pathname === "/Karriere" ? "active-link" : "link"}
+            to="/Karriere"
+          >
+            Karriere
+          </NavLink>
+          <NavLink
+            className={pathname === "/Kontakt" ? "active-link" : "link"}
+            to="/Kontakt"
+          >
+            Kontakt
+          </NavLink>
+        </div>
       </div>
     </div>
   );
