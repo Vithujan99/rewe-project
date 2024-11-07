@@ -32,7 +32,7 @@ function Table() {
         <tbody>
           {apiData.map((data) => {
             return (
-              <tr>
+              <tr key={data.KalenderWoche}>
                 <th scope="col">{data.KalenderWoche}</th>
                 <td>{data.Montag}</td>
                 <td>{data.Dienstag}</td>
