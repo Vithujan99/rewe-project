@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #cd071e;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.moving-navbar {
+  background-color: #cd071e70;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+#logo-holder {
+  width: 500px;
+  opacity: 100%;
+  transition: all 0.5s ease;
+}
+#link-holder {
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 0 30px;
+}
