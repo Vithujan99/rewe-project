@@ -1,10 +1,10 @@
 import React from "react";
-import Table from "../../Table";
+import WorkerCards from "../../WorkerCards";
 
 const Home = () => {
   return (
     <div>
-      <Table></Table>
+      <WorkerCards></WorkerCards>
     </div>
   );
 };
