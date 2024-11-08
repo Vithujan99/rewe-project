@@ -16,9 +16,15 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className={scroll ? "moving-navbar" : "navbar"}>
-      <div className="navbar-content">
+    <nav className={scroll ? "moving-navbar" : "navbar"}>
+      <div className="navbar-container">
         <div className="logo-holder">REWE</div>
+        {/* <img
+          className="logo-holder"
+          src={siegerLogo}
+          alt="Logo der Rewe Filiale"
+        />*/}
+
         <div className="link-holder">
           <NavLink className={pathname === "/" ? "active-link" : "link"} to="/">
             Home
@@ -43,7 +49,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

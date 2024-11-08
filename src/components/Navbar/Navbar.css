@@ -1,42 +1,47 @@
 .navbar {
-  background-color: #cd071e;
+  background-color: var(--color-secondory);
   width: 100%;
   position: sticky;
   top: 0;
   transition: all 0.5s ease;
   justify-items: center;
+  z-index: 400;
 }
 .moving-navbar {
-  background-color: #cd071e70;
+  background-color: #ffffff70;
   width: 100%;
   position: sticky;
   top: 0;
   transition: all 0.5s ease;
   justify-items: center;
+  z-index: 400;
 }
-.navbar-content {
-  width: 75%;
+.navbar-container {
+  width: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  color: white;
+  height: 70px;
+  color: var(--color-primary);
   font-size: 18px;
   font-weight: bold;
 }
 
 .logo-holder {
-  opacity: 100%;
   transition: all 0.5s ease;
   margin: 0px 10px;
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: 900;
+  color: var(--color-primary);
+}
+.logo-holder img {
 }
 .link-holder {
 }
 
 .link {
-  color: white;
+  color: var(--color-tertiary);
   text-decoration: none;
   padding: 5px 20px;
   margin: 0px 10px;
@@ -47,8 +52,8 @@
   transition: all 0.25s ease;
 }
 .active-link {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--color-primary);
   border-radius: 50px;
   text-decoration: none;
   padding: 5px 20px;
