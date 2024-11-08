@@ -59,3 +59,45 @@
   padding: 5px 20px;
   margin: 0px 10px;
 }
+.mobile-link-holder {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  top: 70px;
+  right: 30px;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+}
+.menu-icon svg {
+  width: 30px;
+  display: flex;
+}
+.menu-icon {
+  padding: 4px;
+  cursor: pointer;
+}
+
+/*Hidden Items*/
+.menu-icon,
+.mobile-link-holder {
+  display: none;
+}
+@media (max-width: 800px) {
+  .link-holder {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .mobile-link-holder {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .mobile-link-holder.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
