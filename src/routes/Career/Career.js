@@ -1,11 +1,10 @@
 import React from "react";
+import CareerHero from "./CareerHero/CareerHero";
 
 const Career = () => {
   return (
     <div>
-      <div>
-        <p>ashdjaksdhkjashdjashd</p>
-      </div>
+      <CareerHero></CareerHero>
     </div>
   );
 };

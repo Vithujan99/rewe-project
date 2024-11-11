@@ -1,11 +1,11 @@
 import React from "react";
 import WorkerCards from "../../WorkerCards";
-import Hero from "./Hero/HomeHero";
+import HomeHero from "./Hero/HomeHero";
 
 const Home = () => {
   return (
     <div>
-      <Hero></Hero>
+      <HomeHero></HomeHero>
       <WorkerCards></WorkerCards>
     </div>
   );

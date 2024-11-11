@@ -25,7 +25,7 @@ const HomeHero = () => {
       },
     },
   };
-  const heroTextTielVariants = {
+  const heroTextTitelVariants = {
     hidden: {
       opacity: 0,
       scale: 0.9,
@@ -72,14 +72,14 @@ const HomeHero = () => {
         animate="visible"
       />
       <motion.div
-        className="hero-text-content"
+        className="homehero-text-content"
         variants={heroTextContentVariants}
         initial="hidden"
         animate="visible"
       >
         <div className="container">
-          <div className="hero-text-content-center">
-            <motion.h1 variants={heroTextTielVariants}>
+          <div className="homehero-text-content-center">
+            <motion.h1 variants={heroTextTitelVariants}>
               Herzlich Willkommen zu
             </motion.h1>
             <motion.img
