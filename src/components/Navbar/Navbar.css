@@ -4,7 +4,8 @@
   position: sticky;
   top: 0;
   transition: all 0.5s ease;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   z-index: 400;
 }
 .moving-navbar {
@@ -13,7 +14,8 @@
   position: sticky;
   top: 0;
   transition: all 0.5s ease;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
   z-index: 400;
 }
 .navbar-container {
@@ -38,6 +40,9 @@
 .logo-holder img {
 }
 .link-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .link {
