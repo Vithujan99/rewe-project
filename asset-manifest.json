@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.b9df53c5.css",
-    "main.js": "/rewe-project/static/js/main.2f8766da.js",
+    "main.css": "/rewe-project/static/css/main.8001af51.css",
+    "main.js": "/rewe-project/static/js/main.1a2ab595.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
     "index.html": "/rewe-project/index.html",
-    "main.b9df53c5.css.map": "/rewe-project/static/css/main.b9df53c5.css.map",
-    "main.2f8766da.js.map": "/rewe-project/static/js/main.2f8766da.js.map",
+    "main.8001af51.css.map": "/rewe-project/static/css/main.8001af51.css.map",
+    "main.1a2ab595.js.map": "/rewe-project/static/js/main.1a2ab595.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9df53c5.css",
-    "static/js/main.2f8766da.js"
+    "static/css/main.8001af51.css",
+    "static/js/main.1a2ab595.js"
   ]
 }
