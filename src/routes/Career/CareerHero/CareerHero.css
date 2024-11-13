@@ -1,9 +1,9 @@
 .hero {
-  height: 100vh - 70px;
+  height: calc(100vh - 70px);
 }
 .hero-img {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: 12% center;
   position: absolute;
@@ -28,6 +28,7 @@
   color: var(--color-tertiary);
   text-align: center;
   padding: 100px;
+  padding-bottom: 50px;
 }
 .hero-text-content-center h1 {
   font-size: 40px;
@@ -38,12 +39,16 @@
 @media (max-width: 800px) {
   .hero-text-content-center {
     padding: 70px;
+    padding-bottom: 40px;
   }
   .hero-text-content-center h1 {
     font-size: 30px;
   }
 }
 @media (max-height: 600px) {
+  .hero {
+    height: calc(100vh - 50px);
+  }
   .hero-text-content-center {
     padding: 25px;
   }
