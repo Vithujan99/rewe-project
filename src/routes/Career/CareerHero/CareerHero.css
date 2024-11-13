@@ -1,5 +1,6 @@
 .hero {
   height: calc(100vh - 70px);
+  position: relative;
 }
 .hero-img {
   height: 100%;
@@ -37,12 +38,15 @@
   text-align: center;
 }
 @media (max-width: 800px) {
+  .hero {
+    height: calc(60vh - 70px);
+  }
   .hero-text-content-center {
-    padding: 70px;
-    padding-bottom: 40px;
+    padding: 40px;
+    padding-bottom: 15px;
   }
   .hero-text-content-center h1 {
-    font-size: 30px;
+    font-size: 22.5px;
   }
 }
 @media (max-height: 600px) {

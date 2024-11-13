@@ -46,3 +46,21 @@
   padding: 5px;
   font-size: 18px;
 }
+
+@media (max-width: 800px) {
+  .jobs-content-holder p {
+    font-size: 15px;
+  }
+  .jobs-content-holder h2 {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .jobs-card h3 {
+    padding: 20px 40px 5px 20px;
+    font-size: 18px;
+  }
+  .job-button {
+    padding: 4px;
+    font-size: 15px;
+  }
+}

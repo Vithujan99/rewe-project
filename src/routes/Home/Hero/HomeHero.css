@@ -1,5 +1,6 @@
 #homehero {
   height: calc(100vh - 70px);
+  position: relative;
 }
 #homehero-img {
   height: 100%;
@@ -42,13 +43,24 @@
   width: 200px;
 }
 @media (max-width: 800px) {
+  #homehero {
+    height: calc(70vh - 70px);
+  }
+  #homehero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50 10;
+    position: absolute;
+    top: 0;
+  }
   .homehero-text-content-center {
     flex-direction: column;
     gap: 0px;
     padding-top: 40px;
   }
   #homehero h1 {
-    font-size: 25px;
+    font-size: 22.5px;
     line-height: 1.4;
     margin: 0;
   }
