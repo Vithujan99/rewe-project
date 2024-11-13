@@ -1,9 +1,10 @@
 #homehero {
-  height: 100vh;
+  height: 100vh - 70px;
+  background-color: red;
 }
 #homehero-img {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   object-position: 12% center;
   position: absolute;
@@ -38,17 +39,36 @@
   font-size: 36px;
   line-height: 1.4;
   margin: 0;
+  text-align: center;
 }
-
+.homehero-text-content-center img {
+  width: 200px;
+}
 @media (max-width: 800px) {
-  .hero-text-content-center {
+  .homehero-text-content-center {
     flex-direction: column;
     gap: 0px;
-    padding-top: 16px;
+    padding-top: 40px;
   }
   #homehero h1 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.4;
     margin: 0;
+  }
+  .homehero-text-content-center img {
+    width: 150px;
+  }
+}
+@media (max-height: 600px) {
+  .homehero-text-content-center {
+    padding: 0px;
+    flex-direction: row;
+    gap: 25px;
+  }
+  #homehero h1 {
+    font-size: 25px;
+  }
+  .homehero-text-content-center img {
+    width: 125px;
   }
 }

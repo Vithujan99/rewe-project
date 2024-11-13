@@ -106,3 +106,12 @@
     pointer-events: auto;
   }
 }
+/*Handy umgedreht*/
+@media (max-height: 600px) {
+  .navbar-container {
+    height: 50px;
+  }
+  .mobile-link-holder {
+    top: 50px;
+  }
+}

@@ -1,0 +1,9 @@
+.jobs {
+  display: flex;
+  justify-content: center;
+}
+.jobs-content-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
