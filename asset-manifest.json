@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.c3ca5cb9.css",
+    "main.css": "/rewe-project/static/css/main.be18e656.css",
     "main.js": "/rewe-project/static/js/main.0e73b74c.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
     "static/media/rewe-gemüse-abteilung-upscaling.jpg": "/rewe-project/static/media/rewe-gemüse-abteilung-upscaling.940951546368ab721077.jpg",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
     "static/media/sieger_logo.jpg": "/rewe-project/static/media/sieger_logo.eadd06531fd8d94d7a1b.jpg",
     "index.html": "/rewe-project/index.html",
-    "main.c3ca5cb9.css.map": "/rewe-project/static/css/main.c3ca5cb9.css.map",
+    "main.be18e656.css.map": "/rewe-project/static/css/main.be18e656.css.map",
     "main.0e73b74c.js.map": "/rewe-project/static/js/main.0e73b74c.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3ca5cb9.css",
+    "static/css/main.be18e656.css",
     "static/js/main.0e73b74c.js"
   ]
 }
