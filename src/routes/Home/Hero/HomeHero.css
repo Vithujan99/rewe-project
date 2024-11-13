@@ -22,8 +22,6 @@
 }
 .container {
   width: 85%;
-  display: flex;
-  justify-content: center;
 }
 .homehero-text-content-center {
   width: 100%;
