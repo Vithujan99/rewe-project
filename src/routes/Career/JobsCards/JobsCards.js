@@ -33,11 +33,22 @@ const JobsCards = () => {
     <div className="jobs">
       <div className="container">
         <div className="jobs-content-holder">
-          <p>Text</p>
+          <p>
+            Willkommen bei Rewe! Wir sind stets auf der Suche nach talentierten
+            und motivierten Menschen, die gemeinsam mit uns wachsen und die
+            Zukunft gestalten möchten. Bei uns erwartet dich ein inspirierendes
+            Arbeitsumfeld, spannende Projekte und die Chance, wirklich etwas zu
+            bewirken. Werde Teil unseres Teams und bringe deine Karriere auf das
+            nächste Level!
+          </p>
+          <h2>Aktuell offene Jobs</h2>
           <div className="jobs-container">
             {jobs.map((job) => (
-              <div key={job.id}>
-                <Link to={`/Karriere/${job.id}`}>{job.Name}</Link>
+              <div className="jobs-card" key={job.id}>
+                <h3>{job.Name}</h3>
+                <Link className="job-button" to={`/Karriere/${job.id}`}>
+                  Mehr Erfahren
+                </Link>
               </div>
             ))}
           </div>
