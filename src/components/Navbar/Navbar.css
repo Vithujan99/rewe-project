@@ -1,7 +1,7 @@
 .navbar {
   background-color: var(--color-secondory);
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: all 0.5s ease;
   display: flex;
@@ -11,7 +11,7 @@
 .moving-navbar {
   background-color: #ffffff70;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: all 0.5s ease;
   display: flex;
@@ -104,5 +104,14 @@
   .mobile-link-holder.active {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+/*Handy umgedreht*/
+@media (max-height: 600px) {
+  .navbar-container {
+    height: 50px;
+  }
+  .mobile-link-holder {
+    top: 50px;
   }
 }

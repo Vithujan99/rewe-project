@@ -1,0 +1,13 @@
+.footer {
+  margin-top: 75px;
+  background-color: var(--color-tertiary);
+  display: flex;
+  justify-content: center;
+}
+.footer-content-holder {
+  padding: 20px 0 20px 0;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
