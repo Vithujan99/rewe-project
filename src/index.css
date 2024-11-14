@@ -11,13 +11,19 @@ body {
 }
 html {
   scrollbar-width: thin;
-  scrollbar-color: #cd071e black;
+  scrollbar-color: #cd071e white;
 }
 :root {
   --color-primary: #cd071e;
   --color-secondory: white;
   --color-tertiary: #707070;
 }
+
+::-webkit-scrollbar {
+  width: 8px; /* Breite der vertikalen Scrollbar /
+  height: 8px; / Höhe der horizontalen Scrollbar */
+}
+
 body {
   font-size: 18px;
 }
