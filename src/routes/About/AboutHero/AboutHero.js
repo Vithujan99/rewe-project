@@ -1,4 +1,5 @@
 import React from 'react'
+import "./AboutHero.css";
 import heroimg from "../../../images/rewe_von_außen.jpg";
 
 const AboutHero = () => {
@@ -9,9 +10,7 @@ const AboutHero = () => {
             src={heroimg}
             alt="Rewe Filiale von Außen"
           />
-          <div
-            className="hero-text-content"
-          >
+          <div className="hero-text-content">
             <div className="container">
               <div className="hero-text-content-center">
                 <h1>

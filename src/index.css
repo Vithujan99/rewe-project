@@ -11,7 +11,8 @@ body {
 }
 html {
   scrollbar-width: thin;
-  scrollbar-color: #cd071e black;
+  scrollbar-color: #cd071e white;
+  
 }
 :root {
   --color-primary: #cd071e;
