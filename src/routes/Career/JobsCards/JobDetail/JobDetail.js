@@ -9,7 +9,7 @@ const JobDetail = () => {
       id: 1,
       Name: "Frontend Developer",
       Beschreibung: `
-      <h2>Was du bei uns bewegst:</h2>
+      <h3>Was du bei uns bewegst:</h3>
       <p>
         Du liebst es, wenn sich deine Gäste richtig wohlfühlen und du ihnen stets deine volle Aufmerksamkeit schenken kannst? 
         Du möchtest sicherstellen, dass unsere Kund:innen in unserem REWE Markt das bestmögliche Einkaufserlebnis haben? 
@@ -21,14 +21,14 @@ const JobDetail = () => {
         <li>Du führst Kund:innengespräche und hilfst bei technischen Schwierigkeiten.</li>
       </ul>
 
-      <h2>Was uns überzeugt:</h2>
+      <h3>Was uns überzeugt:</h3>
       <ul>
         <li>Deine ausgeprägte Kund:innenorientierung und Kommunikationsstärke, dein Teamgeist und dein Verantwortungsbewusstsein</li>
         <li>Deine Begeisterung für den Handel sowie deine Freude am Umgang mit Menschen</li>
         <li>Deine Bereitschaft, Neues zu lernen</li>
       </ul>
 
-      <h2>Was wir bieten:</h2>
+      <h3>Was wir bieten:</h3>
       <p>
         Als sicherer Arbeitgeber stehen wir unseren Mitarbeitenden mit vielen Perspektiven und flexiblen Angeboten für alle Lebensphasen zur Seite. 
         Bei uns kannst du schnell Verantwortung übernehmen und den Lebensmitteleinzelhandel mitgestalten – sogar bis in die Selbständigkeit mit deinem eigenen REWE Markt.
@@ -78,7 +78,7 @@ const JobDetail = () => {
       <div className="container">
         <div className="jobDetail-content-button-holder">
           <div className="jobDetail-content-holder">
-            <h1>{job.Name}</h1>
+            <h2>{job.Name}</h2>
             <div dangerouslySetInnerHTML={{ __html: job.Beschreibung }} />
           </div>
           <div className="job-supply-button">Berwerben</div>

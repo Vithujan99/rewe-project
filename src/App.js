@@ -8,6 +8,7 @@ import Contact from "./routes/Contact/Contact";
 import JobDetail from "./routes/Career/JobsCards/JobDetail/JobDetail";
 
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* Route for the detailed job page */}
         <Route path="/Karriere/:id" element={<JobDetail />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

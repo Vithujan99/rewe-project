@@ -41,16 +41,18 @@ const JobsCards = () => {
             bewirken. Werde Teil unseres Teams und bringe deine Karriere auf das
             nächste Level!
           </p>
-          <h2>Aktuell offene Jobs</h2>
-          <div className="jobs-container">
-            {jobs.map((job) => (
-              <div className="jobs-card" key={job.id}>
-                <h3>{job.Name}</h3>
-                <Link className="job-button" to={`/Karriere/${job.id}`}>
-                  Mehr Erfahren
-                </Link>
-              </div>
-            ))}
+          <div className="jobs-card-section">
+            <h2>Aktuell offene Jobs</h2>
+            <div className="jobs-container">
+              {jobs.map((job) => (
+                <div className="jobs-card" key={job.id}>
+                  <h3>{job.Name}</h3>
+                  <Link className="job-button" to={`/Karriere/${job.id}`}>
+                    Mehr Erfahren
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
