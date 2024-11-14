@@ -18,3 +18,32 @@ html {
   --color-secondory: white;
   --color-tertiary: #707070;
 }
+body {
+  font-size: 18px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}

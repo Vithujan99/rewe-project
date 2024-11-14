@@ -1,5 +1,5 @@
 #homehero {
-  height: calc(100vh - 70px);
+  height: 100vh;
   position: relative;
 }
 #homehero-img {
@@ -34,7 +34,6 @@
 }
 
 #homehero h1 {
-  font-size: 36px;
   line-height: 1.4;
   margin: 0;
   text-align: center;
@@ -44,7 +43,7 @@
 }
 @media (max-width: 800px) {
   #homehero {
-    height: calc(70vh - 70px);
+    height: 70vh;
   }
   #homehero-img {
     height: 100%;
@@ -70,7 +69,7 @@
 }
 @media (max-height: 600px) {
   #homehero {
-    height: 100vh - 50px;
+    height: 100vh;
     background-color: red;
   }
   .homehero-text-content-center {

@@ -1,7 +1,7 @@
 .navbar {
   background-color: var(--color-secondory);
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: all 0.5s ease;
   display: flex;
@@ -11,7 +11,7 @@
 .moving-navbar {
   background-color: #ffffff70;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: all 0.5s ease;
   display: flex;
