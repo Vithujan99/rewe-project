@@ -46,27 +46,30 @@
   padding: 25px 50px 10px 25px;
   color: white;
 }
-.job-button {
+.job-card-button {
   font-weight: 600;
   background-color: white;
-  border-radius: 0 0 7px 7px;
   color: var(--color-tertiary);
   text-align: center;
   text-decoration: none;
   padding: 5px;
 }
-.job-button:hover {
+.job-card-button:hover {
   color: #ffa591;
 }
 
 @media (max-width: 800px) {
+  .jobs-card-section {
+    padding: 7%;
+    padding-bottom: 50px;
+  }
   .jobs-content-holder h2 {
     margin: 25px;
   }
   .jobs-card h3 {
     padding: 20px 40px 7.5px 20px;
   }
-  .job-button {
+  .job-card-button {
     padding: 4px;
   }
 }

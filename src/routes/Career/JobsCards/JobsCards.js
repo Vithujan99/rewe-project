@@ -47,7 +47,7 @@ const JobsCards = () => {
               {jobs.map((job) => (
                 <div className="jobs-card" key={job.id}>
                   <h3>{job.Name}</h3>
-                  <Link className="job-button" to={`/Karriere/${job.id}`}>
+                  <Link className="job-card-button" to={`/Karriere/${job.id}`}>
                     Mehr Erfahren
                   </Link>
                 </div>

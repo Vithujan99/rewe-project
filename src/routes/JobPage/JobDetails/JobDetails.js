@@ -1,8 +1,9 @@
 import React from "react";
-import "./JobDetail.css";
+import "./JobDetails.css";
 import { useParams } from "react-router-dom";
+import { motion } from "motion/react";
 
-const JobDetail = () => {
+const JobDetails = () => {
   const { id } = useParams(); // Extract job ID from the URL
   const jobs = [
     {
@@ -75,17 +76,23 @@ const JobDetail = () => {
   }
   return (
     <div className="jobDetail">
-      <div className="container">
-        <div className="jobDetail-content-button-holder">
-          <div className="jobDetail-content-holder">
-            <h2>{job.Name}</h2>
-            <div dangerouslySetInnerHTML={{ __html: job.Beschreibung }} />
-          </div>
-          <div className="job-supply-button">Berwerben</div>
-        </div>
+      <div className="jobDetail-content-holder">
+        <h2>{job.Name}</h2>
+        <div dangerouslySetInnerHTML={{ __html: job.Beschreibung }} />
       </div>
+      <motion.button
+        onClick={() => {
+          window.location.href = `mailto:example@example.com?subject=Bewerbung%20für%20die%20Stelle%20"${job.Name}"&body=Lieber%20Bewerber,%0A%0A%20dies%20ist%20nur%20eine%20Beispiel-Mail.%20Bitte%20versende%20deinen%20Lebenslauf%20und%20verfasse%20die%20E-Mail%20neu.%0A%0ADie%20E-Mail%20sollte%20deinen%20Lebenslauf%20sowie%20optional%20dein%20Anschreiben%20und%20deine%20Zeugnisse%20enthalten.%20Das%20Anschreiben%20und%20die%20Zeugnisse%20sind%20freiwillig.%0A%0AGerne%20stehe%20ich%20für%20weitere%20Fragen%20zur%20Verfügung.%0A%0AGrüße,%0A%0A[Dein%20Name]%0A%0A%0A%5BAnhänge%20bitte%20hinzufügen:%20Lebenslauf,%20Anschreiben,%20Zeugnisse%5D`;
+        }}
+        className="job-supply-button"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      >
+        Berwerben
+      </motion.button>
     </div>
   );
 };
 
-export default JobDetail;
+export default JobDetails;

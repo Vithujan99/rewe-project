@@ -1,0 +1,10 @@
+.datenschutz {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+@media (max-width: 800px) {
+  .datenschutz {
+    padding-top: 100px;
+  }
+}

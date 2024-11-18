@@ -1,0 +1,12 @@
+.jobPage {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+@media (max-width: 800px) {
+  .jobPage {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+}

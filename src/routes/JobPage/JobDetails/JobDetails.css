@@ -1,10 +1,5 @@
 .jobDetail {
   display: flex;
-  justify-content: center;
-  padding-top: 150px;
-}
-.jobDetail-content-button-holder {
-  display: flex;
   flex-direction: row;
   position: relative;
 }
@@ -29,25 +24,21 @@
   position: sticky;
   top: 100px; /* Distance from the top of the viewport */
   align-self: flex-start;
-  background-color: #0078d4;
+  background-color: var(--color-primary);
   color: #fff;
+  font-size: 18px;
   padding: 10px 20px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border: 0;
   margin-left: auto; /* Pushes button to the right */
 }
 
 @media (max-width: 800px) {
   .jobDetail {
     display: flex;
-    justify-content: center;
-    padding-top: 100px;
-  }
-  .jobDetail-content-button-holder {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
   }
   .jobDetail-content-holder {
@@ -65,6 +56,9 @@
     padding: 0px 0px 10px 20px;
   }
   .job-supply-button {
-    display: none;
+    position: static;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 0;
   }
 }
