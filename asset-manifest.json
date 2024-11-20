@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.979b480b.css",
-    "main.js": "/rewe-project/static/js/main.191559a0.js",
+    "main.css": "/rewe-project/static/css/main.2b267a15.css",
+    "main.js": "/rewe-project/static/js/main.7319bdcf.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
-    "static/media/rewe-gemüse-abteilung-upscaling.jpg": "/rewe-project/static/media/rewe-gemüse-abteilung-upscaling.940951546368ab721077.jpg",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
+    "static/media/rewe-gemüse-abteilung-upscaling.jpg": "/rewe-project/static/media/rewe-gemüse-abteilung-upscaling.78a20139ff103339c123.jpg",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
+    "static/media/organic-tasty-vegetable-wicker-basket-sale-1920.jpg": "/rewe-project/static/media/organic-tasty-vegetable-wicker-basket-sale-1920.5edbc96cef34c7fd706c.jpg",
     "static/media/sieger_logo.jpg": "/rewe-project/static/media/sieger_logo.eadd06531fd8d94d7a1b.jpg",
     "static/media/sieger_logo-transparent.png": "/rewe-project/static/media/sieger_logo-transparent.dd0567fa5370406cde36.png",
     "index.html": "/rewe-project/index.html",
-    "main.979b480b.css.map": "/rewe-project/static/css/main.979b480b.css.map",
-    "main.191559a0.js.map": "/rewe-project/static/js/main.191559a0.js.map",
+    "main.2b267a15.css.map": "/rewe-project/static/css/main.2b267a15.css.map",
+    "main.7319bdcf.js.map": "/rewe-project/static/js/main.7319bdcf.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.979b480b.css",
-    "static/js/main.191559a0.js"
+    "static/css/main.2b267a15.css",
+    "static/js/main.7319bdcf.js"
   ]
 }
