@@ -1,11 +1,11 @@
 .footer {
   margin-top: 75px;
-  background: linear-gradient(to bottom, white 25%, var(--color-tertiary) 100%);
+  background-color: rgb(170, 170, 170, 0.5);
   display: flex;
   justify-content: center;
 }
 .footer-content-holder {
-  padding: 20px 0 20px 0;
+  padding: 40px 0 20px 0;
   color: black;
   display: flex;
   justify-content: space-between;
