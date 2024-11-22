@@ -1,6 +1,7 @@
 .flex-container {
     display:flex;
     flex-direction: column;
+    /*justify-content: center;*/
     align-items: center;
 }
 .flex-item{
@@ -12,18 +13,21 @@
     align-items: center;
     border-radius: 75px;
     background-color: white;
-    color: black;
-    border: 3px solid black;
+    border: 3px solid var(--color-primary);
     position:relative;
     
 }
-.manager-img1{
+.mitarbeiter-img{
     top: -100px;
     height: 200px;
     width: 200px;
-    margin-right: 20px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
     position: absolute;
 }
 .flex-item-holder{
@@ -35,10 +39,55 @@
     row-gap: 150px;
     margin-top: 150px;
 }
-
 .biotext{
     overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+.titel{
+    text-align: center;
 }
 .flex-item-text{
-    
+    margin-top: 50px;
 }
+.manager-img {
+    height: 500px;
+    width: 500px;
+    display: block;
+    border-left: 10px solid white;
+}
+.manager-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.desc{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.hr{
+    margin-top: 50px;
+    border-top: 3px solid red;
+}
+@media (max-width: 800px) {
+    .manager-img {
+        display: block;   
+        border-left: 0;
+    }
+    .manager-container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        color: white;
+        background-color: var(--color-primary);
+        overflow: hidden;
+    }
+    .desc{
+        padding: 20px;
+    }
+  }
