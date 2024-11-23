@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.725e02a2.css",
-    "main.js": "/rewe-project/static/js/main.7319bdcf.js",
+    "main.css": "/rewe-project/static/css/main.023ace33.css",
+    "main.js": "/rewe-project/static/js/main.ca1bda16.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
     "static/media/rewe-gemüse-abteilung-upscaling.jpg": "/rewe-project/static/media/rewe-gemüse-abteilung-upscaling.78a20139ff103339c123.jpg",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
+    "static/media/Familie_Sieger_RB.png": "/rewe-project/static/media/Familie_Sieger_RB.60aefa40bd700a610267.png",
+    "static/media/hh-img-arbeiter.png": "/rewe-project/static/media/hh-img-arbeiter.75b5723b3fa5795ada5b.png",
     "static/media/organic-tasty-vegetable-wicker-basket-sale-1920.jpg": "/rewe-project/static/media/organic-tasty-vegetable-wicker-basket-sale-1920.5edbc96cef34c7fd706c.jpg",
+    "static/media/impact.ttf": "/rewe-project/static/media/impact.393c8a0b905e3208112c.ttf",
     "static/media/sieger_logo.jpg": "/rewe-project/static/media/sieger_logo.eadd06531fd8d94d7a1b.jpg",
     "static/media/sieger_logo-transparent.png": "/rewe-project/static/media/sieger_logo-transparent.dd0567fa5370406cde36.png",
     "index.html": "/rewe-project/index.html",
-    "main.725e02a2.css.map": "/rewe-project/static/css/main.725e02a2.css.map",
-    "main.7319bdcf.js.map": "/rewe-project/static/js/main.7319bdcf.js.map",
+    "main.023ace33.css.map": "/rewe-project/static/css/main.023ace33.css.map",
+    "main.ca1bda16.js.map": "/rewe-project/static/js/main.ca1bda16.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.725e02a2.css",
-    "static/js/main.7319bdcf.js"
+    "static/css/main.023ace33.css",
+    "static/js/main.ca1bda16.js"
   ]
 }
