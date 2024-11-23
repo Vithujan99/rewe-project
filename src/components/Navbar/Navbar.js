@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import siegerLogo from "../../images/Familie_Sieger_RB.png";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -97,12 +98,13 @@ const Navbar = () => {
             showMenu ? "mobile-link-holder active" : "mobile-link-holder"
           }
         >
+          {/* LINKS für kleine Geräte*/}
           <NavLink
             className={pathname === "/" ? "active-link" : "link"}
             to="/"
             onClick={toggleMenu}
           >
-            Home
+            HOME
           </NavLink>
 
           <NavLink
@@ -110,7 +112,7 @@ const Navbar = () => {
             to="/FamilieSieger"
             onClick={toggleMenu}
           >
-            Über uns
+            ÜBER UNS
           </NavLink>
           <NavLink
             className={pathname === "/Karriere" ? "active-link" : "link"}
@@ -128,14 +130,15 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <motion.div className="logo-holder" variants={logoVariants}>
+        {/* <motion.div className="logo-holder" variants={logoVariants}>
           REWE
-        </motion.div>
-        {/* <img
-          className="logo-holder"
+        </motion.div>*/}
+        <img
+          className="logo-holder-img"
           src={siegerLogo}
           alt="Logo der Rewe Filiale"
-        />*/}
+          variants={logoVariants}
+        />
 
         <div className="link-holder">
           <motion.div variants={menuItemVariantsHome}>
@@ -143,7 +146,7 @@ const Navbar = () => {
               to="/"
               className={pathname === "/" ? "active-link" : "link"}
             >
-              Home
+              HOME
             </NavLink>
           </motion.div>
           <motion.div variants={menuItemVariantsAbout}>
@@ -151,7 +154,7 @@ const Navbar = () => {
               className={pathname === "/FamilieSieger" ? "active-link" : "link"}
               to="/FamilieSieger"
             >
-              Über uns
+              ÜBER UNS
             </NavLink>
           </motion.div>
           <motion.div variants={menuItemVariantsCareer}>
@@ -159,7 +162,7 @@ const Navbar = () => {
               className={pathname === "/Karriere" ? "active-link" : "link"}
               to="/Karriere"
             >
-              Karriere
+              KARRIERE
             </NavLink>
           </motion.div>
           <motion.div variants={menuItemVariantsContact}>
@@ -167,7 +170,7 @@ const Navbar = () => {
               className={pathname === "/Kontakt" ? "active-link" : "link"}
               to="/Kontakt"
             >
-              Kontakt
+              KONTAKT
             </NavLink>
           </motion.div>
         </div>

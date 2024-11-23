@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Parisienne&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@font-face {
+  font-family: "rewe";
+  src: url("./assets/font/impact.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,16 +22,18 @@ html {
   scrollbar-color: #cd071e white;
 }
 :root {
-  --color-primary: #cd071e;
-  --color-secondory: white;
-  --color-tertiary: #707070;
+  --color-primary: #d40000;
+  --color-secondary: white;
+  --color-tertiary: #808080;
 }
 
 ::-webkit-scrollbar {
   width: 8px; /* Breite der vertikalen Scrollbar /
   height: 8px; / Höhe der horizontalen Scrollbar */
 }
-
+.container {
+  width: 85%;
+}
 body {
   font-size: 18px;
 }
@@ -43,6 +52,18 @@ h2 {
 }
 h3 {
   font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
 }
 
 @media (max-width: 800px) {

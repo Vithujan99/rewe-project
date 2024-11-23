@@ -1,86 +1,69 @@
-#homehero {
+#home-hero {
   height: 100vh;
   position: relative;
 }
-#homehero-img {
-  height: 100%;
-  width: 100%;
+#hh-main-img {
+  width: 100vw;
   object-fit: cover;
-  object-position: 12% center;
-  position: absolute;
-  top: 0;
 }
-.homehero-text-content {
-  display: flex;
-  justify-content: center;
-  z-index: 200;
+.hh-text-holder {
+  margin-left: 7.5%;
+}
+.hh-text-holder h1 {
+  padding-top: 150px;
+  color: var(--color-primary);
+  padding-bottom: 15px;
+}
+.hh-text-holder p {
+  width: 52%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hh-text-one {
+  padding-bottom: 12.5px;
+}
+.hh-image {
   position: absolute;
-  bottom: 0;
-  left: 0;
   right: 0;
-  background-color: white;
-  transform: translateY(100%);
-}
-.container {
-  width: 85%;
-}
-.homehero-text-content-center {
+  bottom: 0;
   width: 100%;
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-tertiary);
+  height: 100%;
+}
+.hh-image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
 }
 
-#homehero h1 {
-  line-height: 1.4;
-  margin: 0;
-  text-align: center;
-}
-.homehero-text-content-center img {
-  width: 200px;
+@media (max-width: 1100px) {
+  .hh-text-holder h1 {
+    color: var(--color-primary);
+    padding-bottom: 10px;
+  }
+  .hh-text-holder p {
+    width: 54%;
+  }
+  .hh-text-one {
+    padding-bottom: 7.5px;
+  }
+  .hh-image img {
+    width: 38%;
+  }
 }
 @media (max-width: 800px) {
-  #homehero {
-    height: 70vh;
+  #home-hero {
+    height: auto;
   }
-  #homehero-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50 10;
-    position: absolute;
-    top: 0;
+  .hh-text-holder h1 {
+    padding-top: 98px;
+    color: var(--color-primary);
   }
-  .homehero-text-content-center {
-    flex-direction: column;
-    gap: 0px;
-    padding-top: 40px;
+  .hh-text-holder p {
+    width: 50%;
   }
-  #homehero h1 {
-    font-size: 22.5px;
-    line-height: 1.4;
-    margin: 0;
-  }
-  .homehero-text-content-center img {
-    width: 150px;
-  }
-}
-@media (max-height: 600px) {
-  #homehero {
-    height: 100vh;
-    background-color: red;
-  }
-  .homehero-text-content-center {
-    padding: 0px;
-    flex-direction: row;
-    gap: 25px;
-  }
-  #homehero h1 {
-    font-size: 25px;
-  }
-  .homehero-text-content-center img {
-    width: 125px;
+  .hh-image img {
+    font-size: 17px;
+    width: 45%;
   }
 }
