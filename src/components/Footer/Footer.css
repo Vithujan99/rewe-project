@@ -1,12 +1,12 @@
 .footer {
   margin-top: 75px;
-  background-color: rgb(170, 170, 170, 0.5);
+  background-color: var(--color-tertiary);
   display: flex;
   justify-content: center;
 }
 .footer-content-holder {
   padding: 40px 0 20px 0;
-  color: black;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -32,7 +32,7 @@
 }
 .footer-link {
   text-decoration: none;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 @media (max-width: 800px) {

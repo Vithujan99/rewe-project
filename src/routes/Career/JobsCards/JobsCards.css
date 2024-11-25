@@ -23,14 +23,13 @@
   border-radius: 50px;
 }
 .jobs-content-holder h2 {
-  margin: 25px;
   margin-bottom: 50px;
   color: white;
   text-align: center;
 }
 .jobs-container {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   width: 100%;
   flex-direction: column;
 }
@@ -43,7 +42,7 @@
   flex-direction: column;
 }
 .jobs-card h3 {
-  padding: 25px 50px 10px 25px;
+  padding: 20px 25px 10px 25px;
   color: white;
 }
 .job-card-button {
@@ -60,14 +59,16 @@
 
 @media (max-width: 800px) {
   .jobs-card-section {
-    padding: 7%;
-    padding-bottom: 50px;
+    padding: 15% 7%;
   }
   .jobs-content-holder h2 {
-    margin: 25px;
+    margin-bottom: 25px;
+  }
+  .jobs-container {
+    gap: 20px;
   }
   .jobs-card h3 {
-    padding: 20px 40px 7.5px 20px;
+    padding: 20px 10px 10px 10px;
   }
   .job-card-button {
     padding: 4px;

@@ -12,20 +12,20 @@ const Impressum = () => {
         <p>
           <strong>Betreiber der Webseite:</strong>
           <br />
-          [Name des Filialinhabers / der Betreibergesellschaft]
+          REWE Familie Sieger
           <br />
-          [Name der Filiale, z. B. Rewe-Markt Müller]
+          REWE Sascha Sieger oHG
           <br />
-          [Adresse der Filiale]
+          Lindenstr. 274-276
           <br />
-          [PLZ, Ort]
+          41063 Mönchengladbach
           <br />
         </p>
 
         <p>
           <strong>Kontakt:</strong>
           <br />
-          Telefon: [Telefonnummer]
+          Telefon: 02161-6532660
           <br />
           E-Mail: <a href="mailto:[E-Mail-Adresse]">[E-Mail-Adresse]</a>
         </p>
@@ -33,7 +33,7 @@ const Impressum = () => {
         <p>
           <strong>Vertreten durch:</strong>
           <br />
-          [Name des Inhabers oder Geschäftsführers]
+          Sascha Sieger
         </p>
 
         <p>

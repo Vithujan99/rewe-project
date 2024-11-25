@@ -1,10 +1,29 @@
 .datenschutz {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 170px;
+}
+.datenschutz h1 {
+  margin-bottom: 5px;
+}
+.datenschutz h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.datenschutz ul {
+  padding: 10px;
+  padding-left: 20px;
 }
 @media (max-width: 800px) {
   .datenschutz {
-    padding-top: 100px;
+    margin-top: 100px;
+  }
+  .datenschutz h2 {
+    padding-top: 15px;
+    margin-bottom: 5px;
+  }
+  .datenschutz ul {
+    padding: 5px;
+    padding-left: 20px;
   }
 }

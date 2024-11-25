@@ -18,8 +18,8 @@ const Footer = () => {
           <div className="footer-content-holder-right">
             <div className="footer-contact-holder">
               <p className="fonter-contact-hader">Kontakt Info</p>
-              <p>Eamil</p>
-              <p>telnr</p>
+              <p>Email</p>
+              <p>02161-6532660</p>
             </div>
             <div className="footer-links-holder">
               <p>Links</p>

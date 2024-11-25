@@ -29,7 +29,18 @@ const ContactForm = () => {
   return (
     <div className="contactform">
       <div className="container">
-        <h2>Wir sind für Sie da</h2>
+        <h2>Kontaktieren Sie Ihre REWE-Filiale</h2>
+        <div className="cf-tel-holder">
+          <h3>📞 Telefon: 02161-6532660</h3>
+          <p>
+            Rufen Sie uns gerne während unserer Öffnungszeiten an – wir helfen
+            Ihnen weiter!
+          </p>
+        </div>
+
+        <h3 className="cf-hodlder-titel">
+          Oder nutzen Sie unser Kontaktformular:
+        </h3>
         <form onSubmit={handleSubmit} className="cf-holder">
           <div className="cf-il-holder">
             <label for="name">Name</label>

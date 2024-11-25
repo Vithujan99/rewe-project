@@ -1,11 +1,29 @@
 .impressum {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 170px;
 }
-
+.impressum h1 {
+  margin-bottom: 5px;
+}
+.impressum h2 {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.impressum ul {
+  padding: 10px;
+  padding-left: 20px;
+}
 @media (max-width: 800px) {
   .impressum {
-    padding-top: 100px;
+    margin-top: 100px;
+  }
+  .impressum h2 {
+    padding-top: 15px;
+    margin-bottom: 5px;
+  }
+  .impressum ul {
+    padding: 5px;
+    padding-left: 20px;
   }
 }

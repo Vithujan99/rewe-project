@@ -2,14 +2,94 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  text-align: center;
 }
 .contactform h2 {
   justify-self: center;
-  color: var(--color-tertiary);
+  color: var(--color-primary);
   margin-bottom: 30px;
+}
+.cf-tel-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.cf-tel-holder h3 {
+  color: var(--color-primary);
+}
+.cf-tel-holder p {
+  font-weight: 500;
+  color: var(--color-tertiary);
+}
+.cf-hodlder-titel {
+  justify-self: center;
+  margin-bottom: 20px;
+  color: var(--color-primary);
 }
 .cf-holder {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+.cf-il-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--color-tertiary);
+  text-align: left;
+}
+.cf-il-holder input {
+  border-radius: 10px;
+  border: 2px solid var(--color-tertiary);
+  padding: 10px;
+}
+.cf-il-holder textarea {
+  border-radius: 10px;
+  border: 2px solid var(--color-tertiary);
+  padding: 10px;
+}
+.cf-holder button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: white;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .contactform {
+    margin-top: 60px;
+  }
+  .contactform h2 {
+    margin-bottom: 20px;
+  }
+  .cf-tel-holder {
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .cf-hodlder-titel {
+    margin-bottom: 10px;
+  }
+  .cf-holder {
+    gap: 15px;
+  }
+  .cf-il-holder {
+    gap: 7.5px;
+  }
+  .cf-il-holder input {
+    padding: 7.5px;
+  }
+  .cf-il-holder textarea {
+    padding: 7.5px;
+  }
+  .cf-holder button {
+    font-size: 18px;
+    padding: 10px;
+  }
 }

@@ -11,13 +11,13 @@ const Datenschutz = () => {
         <p>
           <strong>Verantwortlicher für die Datenverarbeitung:</strong>
           <br />
-          [Name des Unternehmens / Filialinhabers]
+          REWE Sascha Sieger oHG
           <br />
-          [Adresse der Filiale]
+          Lindenstr. 274-276
           <br />
-          [PLZ, Ort]
+          41063 Mönchengladbach
           <br />
-          Telefon: [Telefonnummer]
+          Telefon: 02161-6532660
           <br />
           E-Mail: <a href="mailto:[E-Mail-Adresse]">[E-Mail-Adresse]</a>
         </p>
@@ -118,9 +118,9 @@ const Datenschutz = () => {
           Ausübung Ihrer Rechte können Sie sich jederzeit an uns wenden:
         </p>
         <p>
-          [Name des Unternehmens / Filialinhabers]
+          REWE Sascha Sieger oHG
           <br />
-          [Adresse der Filiale]
+          Lindenstr. 274-276, 41063 Mönchengladbach
           <br />
           E-Mail: <a href="mailto:[E-Mail-Adresse]">[E-Mail-Adresse]</a>
         </p>
