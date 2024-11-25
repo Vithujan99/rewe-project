@@ -14,7 +14,7 @@ const AboutHero = () => {
             <div className="container">
               <div className="hero-text-content-center">
                 <h1>
-                  Das Familien Sieger Team
+                  Unsere Geschichte
                 </h1>
               </div>
             </div>

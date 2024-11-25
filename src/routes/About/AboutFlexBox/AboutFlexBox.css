@@ -73,6 +73,13 @@
     margin-top: 50px;
     border-top: 3px solid red;
 }
+.rewe-außen-img{
+    height: 800px;
+    width: 800px;
+    display: block;
+    object-fit: cover;
+    border-right: 10px solid white;
+}
 @media (max-width: 800px) {
     .manager-img {
         display: block;   
