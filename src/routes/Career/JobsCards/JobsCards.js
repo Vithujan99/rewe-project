@@ -1,22 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./JobsCards.css";
 import { Link } from "react-router-dom";
+import { JobsContext } from "../../../contexts/JobsContext";
 
 const JobsCards = () => {
-  /* 
- const [apiJobsData, setApiJobsData] = useState([]);
-  useEffect(() => {
-    axios
-      .get(
-        "https://api.sheetbest.com/sheets/78484840-5d53-49b4-8262-574a1000787d"
-      )
-      .then((incomingData) => {
-        setApiJobsData(incomingData.data);
-      });
-  }, []);
-    */
+  const { apiJobsData } = useContext(JobsContext);
 
+  const [anyJobs, setAnyJobs] = useState(false);
+  useEffect(() => {
+    if (apiJobsData === null || apiJobsData.length === 0) {
+      setAnyJobs(false);
+    } else {
+      setAnyJobs(true);
+    }
+  }, [apiJobsData]);
   // Sample list of jobs
+  /*
   const jobs = [
     {
       id: 1,
@@ -28,7 +27,7 @@ const JobsCards = () => {
     { id: 2, Name: "Backend Developer" },
     { id: 3, Name: "Full Stack Developer" },
   ];
-
+  */
   return (
     <div className="jobs">
       <div className="container">
@@ -42,17 +41,28 @@ const JobsCards = () => {
             nächste Level!
           </p>
           <div className="jobs-card-section">
-            <h2>Aktuell offene Jobs</h2>
-            <div className="jobs-container">
-              {jobs.map((job) => (
-                <div className="jobs-card" key={job.id}>
-                  <h3>{job.Name}</h3>
-                  <Link className="job-card-button" to={`/Karriere/${job.id}`}>
-                    Mehr Erfahren
-                  </Link>
+            {anyJobs ? (
+              <>
+                <h2>Aktuell offene Jobs</h2>
+                <div className="jobs-container">
+                  {apiJobsData.map((job) => (
+                    <div className="jobs-card" key={job.id}>
+                      <h3>{job.Name}</h3>
+                      <Link
+                        className="job-card-button"
+                        to={`/Karriere/${job.id}`}
+                      >
+                        Mehr Erfahren
+                      </Link>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            ) : (
+              <h2 id="job-card-section-n-titel">
+                Derzeit keine offenen Stellen verfügbar
+              </h2>
+            )}
           </div>
         </div>
       </div>

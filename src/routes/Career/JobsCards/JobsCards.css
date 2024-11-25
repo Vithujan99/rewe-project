@@ -27,6 +27,11 @@
   color: white;
   text-align: center;
 }
+#job-card-section-n-titel {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
 .jobs-container {
   display: flex;
   gap: 40px;
@@ -42,7 +47,7 @@
   flex-direction: column;
 }
 .jobs-card h3 {
-  padding: 20px 25px 10px 25px;
+  padding: 25px 10px 15px 20px;
   color: white;
 }
 .job-card-button {
@@ -64,11 +69,14 @@
   .jobs-content-holder h2 {
     margin-bottom: 25px;
   }
+  #job-card-section-n-titel {
+    margin-bottom: 0;
+  }
   .jobs-container {
     gap: 20px;
   }
   .jobs-card h3 {
-    padding: 20px 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
   }
   .job-card-button {
     padding: 4px;
