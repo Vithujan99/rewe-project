@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.1b2695ca.css",
-    "main.js": "/rewe-project/static/js/main.7d2153c1.js",
+    "main.css": "/rewe-project/static/css/main.ad4000e4.css",
+    "main.js": "/rewe-project/static/js/main.71a3ed86.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
     "static/media/rewe-gemüse-abteilung-upscaling.jpg": "/rewe-project/static/media/rewe-gemüse-abteilung-upscaling.78a20139ff103339c123.jpg",
@@ -13,12 +13,12 @@
     "static/media/sieger_logo.jpg": "/rewe-project/static/media/sieger_logo.eadd06531fd8d94d7a1b.jpg",
     "static/media/sieger_logo-transparent.png": "/rewe-project/static/media/sieger_logo-transparent.dd0567fa5370406cde36.png",
     "index.html": "/rewe-project/index.html",
-    "main.1b2695ca.css.map": "/rewe-project/static/css/main.1b2695ca.css.map",
-    "main.7d2153c1.js.map": "/rewe-project/static/js/main.7d2153c1.js.map",
+    "main.ad4000e4.css.map": "/rewe-project/static/css/main.ad4000e4.css.map",
+    "main.71a3ed86.js.map": "/rewe-project/static/js/main.71a3ed86.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b2695ca.css",
-    "static/js/main.7d2153c1.js"
+    "static/css/main.ad4000e4.css",
+    "static/js/main.71a3ed86.js"
   ]
 }
