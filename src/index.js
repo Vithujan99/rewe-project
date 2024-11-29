@@ -4,14 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter as Router } from "react-router-dom";
-import { JobsProvider } from "./contexts/JobsContext";
+import { DataProvider } from "./contexts/DataContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
-    <JobsProvider>
+    <DataProvider>
       <App />
-    </JobsProvider>
+    </DataProvider>
   </Router>
 );
 

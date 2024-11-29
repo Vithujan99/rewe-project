@@ -1,30 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./AboutFlexBox.css";
 import managerimg from "../../../images/manager.png";
 import rewe_außen from "../../../images/rewe_von_außen.jpg";
+import { DataContext } from "../../../contexts/DataContext";
 const AboutFlexBox = () => {
-  const persondesc = [
-    {
-      id: 1,
-      Titel: "Manager",
-      Text: "A biography, or simply bio, is a detailed description of a person's life. It involves more than just basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of their life, including intimate details of experience, and may include an analysis of the subject's personality.",
-    },
-    {
-      id: 2,
-      Titel: "Manager",
-      Text: "A biography, or simply bio, is a detailed description of a person's life. It involves more than just basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of their life, including intimate details of experience, and may include an analysis of the subject's personality.",
-    },
-    {
-      id: 3,
-      Titel: "Manager",
-      Text: "A biography, or simply bio, is a detailed description of a person's life. It involves more than just basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of their life, including intimate details of experience, and may include an analysis of the subject's personality.",
-    },
-    {
-      id: 4,
-      Titel: "Manager",
-      Text: "A biography, or simply bio, is a detailed description of a person's life. It involves more than just basic facts like education, work, relationships, and death; it portrays a person's experience of these life events. Unlike a profile or curriculum vitae (résumé), a biography presents a subject's life story, highlighting various aspects of their life, including intimate details of experience, and may include an analysis of the subject's personality.",
-    },
-  ];
+  const { apiEmployeeData } = useContext(DataContext);
   return (
     <div class="flex-container">
       {/*Container für Historie*/}
@@ -89,18 +69,18 @@ const AboutFlexBox = () => {
       {/*Beschreibungen der Mitarbeitern*/}
       <div class="container">
         <div class="flex-item-holder">
-          {persondesc.map((person) => (
+          {apiEmployeeData.map((employee) => (
             <div class="flex-item">
               <img
                 class="mitarbeiter-img"
-                src={managerimg}
-                alt="Foto vom Mitarbeiter"
+                src={employee.profilbild.asset.url}
+                alt={employee.name}
               />
               <div class="flex-item-text">
-                <h4 class="titel" key={person.id}>
-                  {person.Titel}
+                <h4 class="titel" key={employee._id}>
+                  {employee.name}
                 </h4>
-                <p class="biotext">{person.Text}</p>
+                <p class="biotext">{employee.position}</p>
               </div>
             </div>
           ))}

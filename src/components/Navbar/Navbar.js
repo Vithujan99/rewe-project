@@ -100,7 +100,7 @@ const Navbar = () => {
         >
           {/* LINKS für kleine Geräte*/}
           <NavLink
-            className={pathname === "/" ? "active-link" : "link"}
+            className={pathname === "/" ? "m-active-link" : "m-link"}
             to="/"
             onClick={toggleMenu}
           >
@@ -108,21 +108,23 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            className={pathname === "/FamilieSieger" ? "active-link" : "link"}
+            className={
+              pathname === "/FamilieSieger" ? "m-active-link" : "m-link"
+            }
             to="/FamilieSieger"
             onClick={toggleMenu}
           >
             ÜBER UNS
           </NavLink>
           <NavLink
-            className={pathname === "/Karriere" ? "active-link" : "link"}
+            className={pathname === "/Karriere" ? "m-active-link" : "m-link"}
             to="/Karriere"
             onClick={toggleMenu}
           >
             Karriere
           </NavLink>
           <NavLink
-            className={pathname === "/Kontakt" ? "active-link" : "link"}
+            className={pathname === "/Kontakt" ? "m-active-link" : "m-link"}
             to="/Kontakt"
             onClick={toggleMenu}
           >
@@ -130,9 +132,6 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        {/* <motion.div className="logo-holder" variants={logoVariants}>
-          REWE
-        </motion.div>*/}
         <img
           className="logo-holder-img"
           src={siegerLogo}

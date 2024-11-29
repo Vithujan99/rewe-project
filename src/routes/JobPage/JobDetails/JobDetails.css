@@ -9,9 +9,9 @@
   padding-right: 100px; /* Leave space on the right for the sticky button */
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
 }
-.jobDetail-content-holder h3 {
+.jobDetail-content-holder h2 {
   padding-top: 10px;
   padding-bottom: 10px;
 }

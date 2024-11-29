@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./HomeHero.css";
-import "./extra.css";
 import heroimg from "../../../images/rewe_von_außen.jpg";
-import hhimg from "../../../images/hh-img-arbeiter.png";
-import siegerLogo from "../../../images/sieger_logo.jpg";
+import siegerLogo from "../../../images/Rewe_Dein_Markt_Logo.png";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
-import useWindowSize from "../../../hooks/useWindowSize";
 
 const HomeHero = () => {
   /// Track if this is the first visit in the session
@@ -104,71 +100,40 @@ const HomeHero = () => {
       },
     },
   };
-  const { width } = useWindowSize();
   return (
-    <div>
-      {width > 800 ? (
-        <div id="home-hero">
-          <div className="hh-text-holder">
-            <h1>
-              Einkaufen leicht gemacht!
-              <br />
-              Wilkommen bei REWE FAMILIE SIEGER
-            </h1>
-            <p>
-              Schön, dass du hier bist! Unsere Webseite ist dein einfacher Weg
-              zu tollen Angeboten, frischen Produkten und einer riesigen
-              Auswahl, die deinen Alltag bereichert. Egal, ob du die besten
-              Preise suchst, Inspiration für dein nächstes Rezept brauchst oder
-              einfach wissen möchtest, was bei uns los ist – bei uns findest du
-              alles auf einen Blick.
-              <br />
-              <br />
-              Starte jetzt deinen Besuch, stöbere durch unsere Kategorien oder
-              entdecke aktuelle Aktionen und Tipps. Viel Spaß dabei
-            </p>
-          </div>
-          <div className="hh-image">
-            <img src={hhimg} alt="Zwei Arbeiter aus Rewe"></img>
-          </div>
-        </div>
-      ) : (
-        <div id="homehero">
-          <motion.img
-            id="homehero-img"
-            src={heroimg}
-            alt="Rewe Filiale von Außen"
-            variants={heroImgVariants}
-            initial="hidden"
-            animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
-          />
-          <motion.div
-            className="homehero-text-content"
-            variants={heroTextContentVariants}
+    <div id="homehero">
+      <div id="home-hero-black-screen" />
+      <motion.img
+        id="homehero-img"
+        src={heroimg}
+        alt="Rewe Filiale von Außen"
+        variants={heroImgVariants}
+        initial="hidden"
+        animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
+      />
+      <motion.div
+        className="homehero-text-content"
+        variants={heroTextContentVariants}
+        initial="hidden"
+        animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
+      >
+        <div className="homehero-text-content-center">
+          <motion.h1
+            variants={heroTextTitelVariants}
             initial="hidden"
             animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
           >
-            <div className="container">
-              <div className="homehero-text-content-center">
-                <motion.h1
-                  variants={heroTextTitelVariants}
-                  initial="hidden"
-                  animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
-                >
-                  Herzlich Willkommen zu
-                </motion.h1>
-                <motion.img
-                  src={siegerLogo}
-                  alt="Logo der Rewe Filiale"
-                  variants={heroTextImgVariants}
-                  initial="hidden"
-                  animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
-                />
-              </div>
-            </div>
-          </motion.div>
+            Herzlich Willkommen zu
+          </motion.h1>
+          <motion.img
+            src={siegerLogo}
+            alt="Logo der Rewe Filiale"
+            variants={heroTextImgVariants}
+            initial="hidden"
+            animate={firstVisit ? "staticVisible" : "visible"} // Nur beim ersten Besuch abspielen
+          />
         </div>
-      )}
+      </motion.div>
     </div>
   );
 };

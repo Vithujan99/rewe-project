@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./CareerHero.css";
-import heroimg from "../../../images/rewe-gemüse-abteilung-upscaling.jpg";
+import { DataContext } from "../../../contexts/DataContext";
 
 const CareerHero = () => {
+  const { apiImgData } = useContext(DataContext);
+  const data = apiImgData.find((img) => img.name === "career-hero-img");
+
+  // If data is not ready, return null to render nothing
+  if (!data) {
+    return null;
+  }
+
   return (
-    <div class="hero">
-      <img class="hero-img" src={heroimg} alt="Obstabteilung in Rewe" />
+    <div className="hero">
+      <img className="hero-img" src={data.bild.asset.url} alt={data.name} />
       <div className="hero-text-content">
         <div className="container">
           <div className="hero-text-content-center">

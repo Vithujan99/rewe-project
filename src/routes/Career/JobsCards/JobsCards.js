@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./JobsCards.css";
 import { Link } from "react-router-dom";
-import { JobsContext } from "../../../contexts/JobsContext";
+import { DataContext } from "../../../contexts/DataContext";
 
 const JobsCards = () => {
-  const { apiJobsData } = useContext(JobsContext);
+  const { apiJobsData } = useContext(DataContext);
 
   const [anyJobs, setAnyJobs] = useState(false);
   useEffect(() => {
@@ -14,20 +14,7 @@ const JobsCards = () => {
       setAnyJobs(true);
     }
   }, [apiJobsData]);
-  // Sample list of jobs
-  /*
-  const jobs = [
-    {
-      id: 1,
-      Name: "Frontend Developer",
-      Beschreibung:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.sadsad",
-      Gehalt: 50,
-    },
-    { id: 2, Name: "Backend Developer" },
-    { id: 3, Name: "Full Stack Developer" },
-  ];
-  */
+
   return (
     <div className="jobs">
       <div className="container">
@@ -46,11 +33,11 @@ const JobsCards = () => {
                 <h2>Aktuell offene Jobs</h2>
                 <div className="jobs-container">
                   {apiJobsData.map((job) => (
-                    <div className="jobs-card" key={job.id}>
-                      <h3>{job.Name}</h3>
+                    <div className="jobs-card" key={job._id}>
+                      <h3>{job.name}</h3>
                       <Link
                         className="job-card-button"
-                        to={`/Karriere/${job.id}`}
+                        to={`/Karriere/${job._id}`}
                       >
                         Mehr Erfahren
                       </Link>
