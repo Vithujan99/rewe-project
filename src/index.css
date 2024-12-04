@@ -26,6 +26,9 @@ html {
   --color-primary: #d40000;
   --color-secondary: white;
   --color-tertiary: #808080;
+  --color-rbonus-one: #2d837a;
+  --color-rbonus-two: #fbee7b;
+  --color-rbonus-three: #d72a83;
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,74 @@
+.rewe-app-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-rbonus-one);
+  padding: 100px 7.5%;
+}
+.ras-content-holder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-rbonus-two);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.ras-ch-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-left: 50px;
+  color: var(--color-rbonus-three);
+}
+.ras-ch-left img {
+  width: 65%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.ras-ch-left img:hover {
+  scale: 1.2;
+  transition: all 0.5s ease;
+}
+.ras-ch-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.ras-ch-right img {
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 800px) {
+  .rewe-app-section {
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--color-rbonus-one);
+    padding: 60px 5%;
+  }
+  .ras-content-holder {
+    flex-direction: column;
+  }
+
+  .ras-ch-left {
+    gap: 20px;
+    padding-left: 0;
+    margin-bottom: -80px;
+    z-index: 10;
+  }
+  .ras-ch-left img {
+    width: 65%;
+    transition: all 0.5s ease;
+  }
+  .ras-ch-left img:hover {
+    scale: 1.2;
+    transition: all 0.5s ease;
+  }
+
+  .ras-ch-left h2 {
+    padding: 0px 20px;
+  }
+}

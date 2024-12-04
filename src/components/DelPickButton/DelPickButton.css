@@ -1,0 +1,55 @@
+.del-pick-button {
+  position: fixed;
+  right: 15px;
+  bottom: 50px;
+  z-index: 400;
+}
+.del-pick-button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-primary);
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0;
+  width: 100px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+#shopping-animation {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.del-pick-button a:hover {
+  width: 430px;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 800px) {
+  .del-pick-button {
+    right: 10px;
+    bottom: 30px;
+  }
+  .del-pick-button a {
+    border-radius: 20px;
+    font-size: 18px;
+    width: 75px;
+    transition: all 0.5s ease;
+  }
+  #shopping-animation {
+    width: 75px;
+  }
+
+  .del-pick-button a:hover {
+    width: 330px;
+    transition: all 0.5s ease;
+  }
+}

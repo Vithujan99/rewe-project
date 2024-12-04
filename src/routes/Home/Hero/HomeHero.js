@@ -33,7 +33,7 @@ const HomeHero = () => {
   };
   const heroTextContentVariants = {
     hidden: {
-      y: "100%", // Starts off-screen below
+      y: "150%", // Starts off-screen below
     },
     visible: {
       y: 0, // Moves up into view

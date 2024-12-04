@@ -11,6 +11,7 @@ import Impressum from "./routes/FooterPages/Impressum/Impressum";
 import Datenschutz from "./routes/FooterPages/Datenschutz/DatenSchutz";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import DelPickButton from "./components/DelPickButton/DelPickButton";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Impressum" element={<Impressum />} />
         <Route path="/Datenschutz" element={<Datenschutz />} />
       </Routes>
+      <DelPickButton />
       <Footer></Footer>
     </div>
   );
