@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./AboutFlexBox.css";
+import "./EmployeeCard.css";
 import managerimg from "../../../images/manager.png";
 import rewe_außen from "../../../images/rewe_von_außen.jpg";
 import { DataContext } from "../../../contexts/DataContext";
@@ -81,6 +82,26 @@ const AboutFlexBox = () => {
                   {employee.name}
                 </h4>
                 <p class="biotext">{employee.position}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/*Beschreibungen der Mitarbeitern*/}
+      <div class="container">
+        <div class="employee-cards-holder">
+          {apiEmployeeData.map((employee) => (
+            <div class="employee-card">
+              <img
+                class="ec-img"
+                src={employee.profilbild.asset.url}
+                alt={employee.name}
+              />
+              <div class="ec-text-holder">
+                <h4 class="ec-titel" key={employee._id}>
+                  {employee.name}
+                </h4>
+                <p class="ec-biotext">{employee.position}</p>
               </div>
             </div>
           ))}

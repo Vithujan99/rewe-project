@@ -53,3 +53,24 @@
     transition: all 0.5s ease;
   }
 }
+
+/*Mobile umgedreht*/
+@media (max-height: 600px) {
+  .del-pick-button {
+    right: 10px;
+    bottom: 30px;
+  }
+  .del-pick-button a {
+    border-radius: 20px;
+    font-size: 18px;
+    width: 75px;
+    transition: all 0.5s ease;
+  }
+  #shopping-animation {
+    width: 75px;
+  }
+  .del-pick-button a:hover {
+    width: 330px;
+    transition: all 0.5s ease;
+  }
+}
