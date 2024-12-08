@@ -10,9 +10,9 @@ const AboutFlexBox = () => {
     <div class="flex-container">
       {/*Container für Historie*/}
       <div class="container">
-        <div class="manager-container">
+        <div class="our-story-section">
           <img
-            class="rewe-außen-img"
+            class="our-story-img"
             src={rewe_außen}
             alt="Bild vom Rewe außen"
           />

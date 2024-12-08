@@ -44,8 +44,21 @@
   scale: 1.2;
   transition: all 0.5s ease;
 }
-.ras-ch-left h2 b {
+.ras-ch-left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ras-ch-left-text h2 {
+  line-height: 2.5rem;
+}
+.ras-ch-left-text h2 b {
   cursor: pointer;
+}
+.ras-ch-left-text p {
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .ras-ch-right {
   flex: 1;
@@ -56,7 +69,7 @@
   height: 100%;
   object-fit: contain;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .rewe-app-section {
     width: 100vw;
     height: auto;
@@ -73,16 +86,26 @@
     padding-top: 15px;
   }
   .ras-ch-left img {
-    width: 60%;
+    width: 250px;
     transition: all 0.5s ease;
   }
   .ras-ch-left img:hover {
     scale: 1.2;
     transition: all 0.5s ease;
   }
-
-  .ras-ch-left h2 {
-    padding: 0px 20px;
+  .ras-ch-left-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 15px;
+  }
+  .ras-ch-left-text h2 {
+    line-height: 27px;
+  }
+  .ras-ch-left-text p {
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
   }
   .ras-ch-right {
     flex: 1;
@@ -99,13 +122,14 @@
 @media (max-height: 600px) {
   .rewe-app-section {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: var(--color-rbonus-one);
     padding: 50px 5%;
   }
 
   .ras-ch-left {
-    gap: 15px;
-    padding-left: 30px;
+    gap: 10px;
+    padding: 20px 20px;
+    z-index: 10;
   }
 }

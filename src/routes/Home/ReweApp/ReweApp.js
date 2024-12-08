@@ -10,9 +10,16 @@ const ReweApp = () => {
       <div className="ras-content-holder">
         <div className="ras-ch-left">
           <img src={ReweBonusLogo} alt="Logo von Rewe Bonus"></img>
-          <h2>
-            Lade die <b>APP</b> herunter und sichere dir exklusive Vorteile!
-          </h2>
+          <div className="ras-ch-left-text">
+            <h2>
+              Lade die <b>Rewe Bonus App</b> herunter und genieße exklusive
+              Vorteile!
+            </h2>
+            <p>
+              Erhalte Rabatte, Bonuspunkte und spannende Aktionen direkt auf
+              dein Smartphone.
+            </p>
+          </div>
         </div>
         <div className="ras-ch-right">
           <Player
