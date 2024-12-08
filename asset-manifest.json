@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.e1303bb4.css",
-    "main.js": "/rewe-project/static/js/main.a8c2598c.js",
+    "main.css": "/rewe-project/static/css/main.5d4ba631.css",
+    "main.js": "/rewe-project/static/js/main.9750bf0b.js",
     "static/js/796.96bb7a6d.chunk.js": "/rewe-project/static/js/796.96bb7a6d.chunk.js",
     "static/js/165.bca10b4d.chunk.js": "/rewe-project/static/js/165.bca10b4d.chunk.js",
     "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
+    "static/media/Endt_KW50_24_web.pdf": "/rewe-project/static/media/Endt_KW50_24_web.480d9751d62735cd2fb3.pdf",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
     "static/media/Familie_Sieger_RB.png": "/rewe-project/static/media/Familie_Sieger_RB.60aefa40bd700a610267.png",
@@ -14,14 +15,14 @@
     "static/media/sieger_logo-transparent.png": "/rewe-project/static/media/sieger_logo-transparent.dd0567fa5370406cde36.png",
     "static/media/Futura Bold.otf": "/rewe-project/static/media/Futura Bold.b3dd2dcb9b51257052ca.otf",
     "index.html": "/rewe-project/index.html",
-    "main.e1303bb4.css.map": "/rewe-project/static/css/main.e1303bb4.css.map",
-    "main.a8c2598c.js.map": "/rewe-project/static/js/main.a8c2598c.js.map",
+    "main.5d4ba631.css.map": "/rewe-project/static/css/main.5d4ba631.css.map",
+    "main.9750bf0b.js.map": "/rewe-project/static/js/main.9750bf0b.js.map",
     "796.96bb7a6d.chunk.js.map": "/rewe-project/static/js/796.96bb7a6d.chunk.js.map",
     "165.bca10b4d.chunk.js.map": "/rewe-project/static/js/165.bca10b4d.chunk.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1303bb4.css",
-    "static/js/main.a8c2598c.js"
+    "static/css/main.5d4ba631.css",
+    "static/js/main.9750bf0b.js"
   ]
 }
