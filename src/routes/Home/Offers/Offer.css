@@ -10,6 +10,23 @@
   width: 70%;
   height: 90vh;
 }
+.download-container {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.prospekt-open-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.prospekt-open-button:hover {
+  background-color: #45a049;
+}
 
 @media (max-width: 800px) {
   .home-offer-section {
