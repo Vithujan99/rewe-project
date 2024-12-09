@@ -4,7 +4,14 @@ import "./EmployeeCard.css";
 import managerimg from "../../../images/manager.png";
 import rewe_außen from "../../../images/rewe_von_außen.jpg";
 import { DataContext } from "../../../contexts/DataContext";
+import Masonry from "react-masonry-css";
+
 const AboutFlexBox = () => {
+  const breakpointColumnsObj = {
+    default: 3,
+    1400: 2,
+    930: 1,
+  };
   const { apiEmployeeData } = useContext(DataContext);
   return (
     <div class="flex-container">
@@ -67,7 +74,7 @@ const AboutFlexBox = () => {
         </div>
       </div>
 
-      {/*Beschreibungen der Mitarbeitern*/}
+      {/*Beschreibungen der Mitarbeitern
       <div class="container">
         <div class="flex-item-holder">
           {apiEmployeeData.map((employee) => (
@@ -87,25 +94,50 @@ const AboutFlexBox = () => {
           ))}
         </div>
       </div>
+      */}
       {/*Beschreibungen der Mitarbeitern*/}
       <div class="container">
-        <div class="employee-cards-holder">
-          {apiEmployeeData.map((employee) => (
-            <div class="employee-card">
-              <img
-                class="ec-img"
-                src={employee.profilbild.asset.url}
-                alt={employee.name}
-              />
-              <div class="ec-text-holder">
-                <h4 class="ec-titel" key={employee._id}>
-                  {employee.name}
-                </h4>
-                <p class="ec-biotext">{employee.position}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="employee-cards-holder"
+          columnClassName="my-masonry-grid_column"
+        >
+          {apiEmployeeData.map((employee) => {
+            if (employee.biotext !== null) {
+              return (
+                <div className="employee-card-biotext" key={employee._id}>
+                  <div className="ecb-top">
+                    <img
+                      className="ecb-img"
+                      src={employee.profilbild.asset.url}
+                      alt={employee.name}
+                    />
+                    <div className="ecb-text-holder">
+                      <h4 className="ecb-titel">{employee.name}</h4>
+                      <p className="ecb-position">{employee.position}</p>
+                    </div>
+                  </div>
+
+                  <p className="ecb-bottom">{employee.biotext}</p>
+                </div>
+              );
+            } else {
+              return (
+                <div className="employee-card" key={employee._id}>
+                  <img
+                    className="ec-img"
+                    src={employee.profilbild.asset.url}
+                    alt={employee.name}
+                  />
+                  <div className="ec-text-holder">
+                    <h4 className="ec-titel">{employee.name}</h4>
+                    <p className="ec-position">{employee.position}</p>
+                  </div>
+                </div>
+              );
+            }
+          })}
+        </Masonry>
       </div>
     </div>
   );

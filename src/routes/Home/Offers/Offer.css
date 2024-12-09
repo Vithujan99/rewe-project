@@ -3,39 +3,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   color: var(--color-primary);
+  text-align: center;
+}
+.home-offer-section p {
+  padding: 0px 7.5%;
+  color: var(--color-tertiary);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.home-offer-section p b {
+  color: var(--color-rbonus-three);
 }
 .prospekt-container {
   width: 70%;
   height: 90vh;
 }
-.download-container {
-  margin-top: 0px;
+.open-container {
   text-align: center;
-}
-
-.prospekt-open-button {
   background-color: #4caf50; /* Green */
-  color: white;
   padding: 10px 20px;
-  text-decoration: none;
   border-radius: 5px;
-  font-size: 16px;
 }
-
-.prospekt-open-button:hover {
+.open-container:hover {
   background-color: #45a049;
+}
+.prospekt-open-button {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 @media (max-width: 800px) {
   .home-offer-section {
     padding: 50px 0px;
-    gap: 25px;
+    gap: 15px;
   }
-  .prospekt-container {
-    width: 90%;
-    height: 80vh;
+  .home-offer-section p {
+    padding: 0px 5%;
+  }
+  .open-container {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0px 5%;
+  }
+  .prospekt-open-button {
+    font-size: 14px;
   }
 }
 

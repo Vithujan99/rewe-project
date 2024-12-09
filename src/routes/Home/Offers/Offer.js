@@ -19,8 +19,13 @@ const Offer = () => {
 
   return (
     <div className="home-offer-section">
-      <h2>Aktuelle Angebote</h2>
-
+      <h2>Aktuelle Angebote & Exklusive Rabatte</h2>
+      <p>
+        Jetzt, da du die <b>Rewe Bonus App</b> heruntergeladen hast, profitierst
+        du nicht nur von exklusiven Vorteilen, sondern auch von unseren
+        aktuellen, großartigen Angeboten! Nutze die Chance, noch mehr zu sparen
+        und spannende Aktionen zu entdecken – direkt in deiner App.
+      </p>
       {/* Embed PDF - Only show if screen width is >= 800px */}
       {!isMobile && (
         <embed
@@ -35,7 +40,7 @@ const Offer = () => {
 
       {/* Download Button - Only show if screen width is < 800px */}
       {isMobile && (
-        <div className="download-container">
+        <div className="open-container">
           <a
             href={pdfUrl}
             target="_blank" // Open PDF in a new tab

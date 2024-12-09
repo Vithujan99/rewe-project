@@ -1,27 +1,33 @@
 .employee-cards-holder {
   padding-top: 50px;
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
 }
 .employee-card {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 25px;
   border-radius: 100px 50px 50px 100px;
   background-color: var(--color-primary);
-  padding-right: 50px;
+  padding-right: 20px;
+  width: 400px;
 }
 
 .ec-img {
-  width: 190px;
-  height: 190px;
+  width: 175px;
+  height: 175px;
   margin: 7px;
   object-fit: cover;
+  object-position: center top;
   border-radius: 100px;
   background-color: #a5a3ae;
   transition: all 0.2s ease;
@@ -34,18 +40,87 @@
 .ec-text-holder {
   color: white;
 }
-@media (max-width: 800px) {
+
+/*Employee Cards with biotext*/
+.employee-card-biotext {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px 50px 50px 50px;
+  background-color: var(--color-primary);
+  width: 400px;
+  padding: 0px 0px 20px 0px;
+}
+.ecb-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--color-primary);
+  padding-right: 20px;
+  border-radius: 100px 50px 50px 100px;
+}
+.ecb-img {
+  width: 175px;
+  height: 175px;
+  margin: 7px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 100px;
+  background-color: #a5a3ae;
+  transition: all 0.2s ease;
+}
+.employee-card-biotext:hover .ecb-img {
+  scale: 1.1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+.ecb-text-holder {
+  color: white;
+}
+
+.ecb-bottom {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: white;
+  padding: 0 30px;
+}
+@media (max-width: 930px) {
   .employee-cards-holder {
-    padding-top: 35px;
-    gap: 25px;
+    padding-top: 40px;
   }
   .employee-card {
+    margin-bottom: 20px;
     gap: 15px;
-    padding-right: 0;
+    padding-right: 15px;
     width: 100%;
   }
   .ec-img {
     width: 120px;
     height: 120px;
+  }
+  /*Employee Cards with biotext*/
+  .employee-card-biotext {
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 70px 50px 50px 50px;
+  }
+  .ecb-top {
+    padding-right: 15px;
+    gap: 15px;
+  }
+  .ecb-img {
+    width: 120px;
+    height: 120px;
+  }
+  .ecb-text-holder {
+    color: white;
+  }
+
+  .ecb-bottom {
+    margin-top: 2.5px;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0 20px;
   }
 }

@@ -26,7 +26,7 @@ export const DataProvider = ({ children }) => {
     const fetchEmployees = async () => {
       try {
         const data = await client.fetch(
-          '*[_type == "employee"]{_id,profilbild{asset -> {url}},name,position}'
+          '*[_type == "employee"]{_id,profilbild{asset -> {url}},name,position,biotext}'
         );
         setApiEmployeeData(data);
       } catch (err) {

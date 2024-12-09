@@ -19,6 +19,7 @@
   height: 100%;
   width: 50%;
   object-fit: cover;
+  object-position: 10% top;
   border-right: 10px solid white;
 }
 .desc {
@@ -33,14 +34,8 @@
   text-align: center;
   padding: 10px;
 }
-
-.manager-img {
-  height: 500px;
-  width: 500px;
-  display: block;
-  border-left: 10px solid white;
-}
 .manager-container {
+  height: 75vh;
   margin-top: 0px;
   display: flex;
   align-items: center;
@@ -49,16 +44,17 @@
   border-radius: 50px;
   overflow: hidden;
 }
+.manager-img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border-left: 10px solid white;
+}
 
 .hr {
   margin-top: 50px;
   border-top: 3px solid red;
-}
-.rewe-außen-img {
-  width: 50%;
-  height: 500px;
-  object-fit: cover;
-  border-right: 10px solid white;
 }
 
 /*CSS für Mitarbeiter*/
@@ -98,7 +94,16 @@
 .flex-item-text {
   margin-top: 50px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .our-story-img {
+    width: 300px;
+  }
+  .manager-img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
   .our-story-section {
     display: flex;
     flex-direction: column-reverse;
@@ -115,19 +120,14 @@
     width: 100%;
     border: 0;
     border-top: 10px solid white;
+    object-position: center 30%;
   }
   .desc {
     flex: none;
     padding: 20px;
   }
-  .manager-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    border-left: 0;
-    margin-bottom: -150px;
-  }
   .manager-container {
+    height: auto;
     justify-self: center;
     margin-top: 10px;
     display: flex;
@@ -137,12 +137,11 @@
     background-color: var(--color-primary);
     overflow: hidden;
   }
-
-  .rewe-außen-img {
+  .manager-img {
     width: 100%;
-    height: auto;
-    border-right: 0;
-    border-top: 5px solid white;
+    height: 350px;
+    border-left: 0;
+    object-position: center top;
   }
 }
 
