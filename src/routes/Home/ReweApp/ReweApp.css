@@ -67,6 +67,7 @@
 }
 #app-handy-animation {
   height: 100%;
+  padding: 10%;
   object-fit: contain;
 }
 @media (max-width: 800px) {

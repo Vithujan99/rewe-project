@@ -2,7 +2,7 @@ import React from "react";
 import "./ReweApp.css";
 import ReweBonusLogo from "../../../images/bonus-app-logo.png";
 import { Player } from "@lottiefiles/react-lottie-player";
-import AppHandyAnimation from "../../../animations/App-Mobile-Download-Ani.json";
+import AppHandyAnimation from "../../../animations/App-Mobile-Download-Ani-Two.json";
 
 const ReweApp = () => {
   return (
