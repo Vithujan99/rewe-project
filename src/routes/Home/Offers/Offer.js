@@ -26,7 +26,18 @@ const Offer = () => {
         aktuellen, großartigen Angeboten! Nutze die Chance, noch mehr zu sparen
         und spannende Aktionen zu entdecken – direkt in deiner App.
       </p>
+      <div className="open-container">
+        <a
+          href={pdfUrl}
+          target="_blank" // Open PDF in a new tab
+          rel="noopener noreferrer" // For security reasons
+          className="prospekt-open-button"
+        >
+          Prospekt im neuen Fenster öffnen
+        </a>
+      </div>
       {/* Embed PDF - Only show if screen width is >= 800px */}
+      {/* 
       {!isMobile && (
         <embed
           className="prospekt-container"
@@ -37,8 +48,8 @@ const Offer = () => {
           alt="PDF Preview"
         />
       )}
-
-      {/* Download Button - Only show if screen width is < 800px */}
+*/}
+      {/* Download Button - Only show if screen width is < 800px
       {isMobile && (
         <div className="open-container">
           <a
@@ -51,6 +62,7 @@ const Offer = () => {
           </a>
         </div>
       )}
+       */}
     </div>
   );
 };
