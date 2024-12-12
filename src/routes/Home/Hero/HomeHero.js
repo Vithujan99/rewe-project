@@ -100,25 +100,6 @@ const HomeHero = () => {
       },
     },
   };
-  /*Richtige höhe bei Mobile zu setzen */
-  useEffect(() => {
-    const setViewportHeight = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-
-    // Initial setzen
-    setViewportHeight();
-
-    // Event-Listener für Fensteränderungen
-    window.addEventListener("resize", setViewportHeight);
-
-    // Cleanup-Funktion
-    return () => {
-      window.removeEventListener("resize", setViewportHeight);
-    };
-  }, []);
-
   return (
     <div id="homehero">
       <div id="home-hero-black-screen" />

@@ -1,5 +1,5 @@
 #homehero {
-  height: calc(var(--vh) * 100);
+  height: 100vh;
   width: 100vw;
   position: relative;
   overflow: hidden;
@@ -50,16 +50,19 @@
 }
 
 @media (max-width: 800px) {
+  #homehero {
+    height: 100vh;
+  }
   #homehero-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 15%;
+    object-position: 5%;
   }
   .homehero-text-content {
     width: 300px;
     right: calc(50% - 150px);
-    bottom: 35px;
+    bottom: 75px;
     padding: 10px;
   }
   .homehero-text-content-center {
@@ -78,6 +81,7 @@
 }
 @media (max-height: 600px) {
   #homehero {
+    height: 100vh;
     background-color: red;
   }
   .homehero-text-content {
