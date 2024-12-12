@@ -51,7 +51,7 @@
 
 @media (max-width: 800px) {
   #homehero {
-    height: 100vh;
+    height: 100dvh;
   }
   #homehero-img {
     height: 100%;
@@ -81,7 +81,7 @@
 }
 @media (max-height: 600px) {
   #homehero {
-    height: 100vh;
+    height: 100dvh;
     background-color: red;
   }
   .homehero-text-content {

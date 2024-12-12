@@ -36,7 +36,6 @@
 @media (max-width: 800px) {
   .footer-logo {
     width: 100px;
-    border-radius: 50%;
   }
   .footer-content-holder-right {
     flex-direction: column;
