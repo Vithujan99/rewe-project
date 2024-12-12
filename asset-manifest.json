@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.ce4c5c4f.css",
+    "main.css": "/rewe-project/static/css/main.93461da9.css",
     "main.js": "/rewe-project/static/js/main.7a4021a3.js",
     "static/js/796.96bb7a6d.chunk.js": "/rewe-project/static/js/796.96bb7a6d.chunk.js",
     "static/js/165.bca10b4d.chunk.js": "/rewe-project/static/js/165.bca10b4d.chunk.js",
@@ -14,14 +14,14 @@
     "static/media/Rewe_Dein_Markt_Logo.png": "/rewe-project/static/media/Rewe_Dein_Markt_Logo.e7b43d57726aa0f2c7a3.png",
     "static/media/Futura Bold.otf": "/rewe-project/static/media/Futura Bold.b3dd2dcb9b51257052ca.otf",
     "index.html": "/rewe-project/index.html",
-    "main.ce4c5c4f.css.map": "/rewe-project/static/css/main.ce4c5c4f.css.map",
+    "main.93461da9.css.map": "/rewe-project/static/css/main.93461da9.css.map",
     "main.7a4021a3.js.map": "/rewe-project/static/js/main.7a4021a3.js.map",
     "796.96bb7a6d.chunk.js.map": "/rewe-project/static/js/796.96bb7a6d.chunk.js.map",
     "165.bca10b4d.chunk.js.map": "/rewe-project/static/js/165.bca10b4d.chunk.js.map",
     "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce4c5c4f.css",
+    "static/css/main.93461da9.css",
     "static/js/main.7a4021a3.js"
   ]
 }
