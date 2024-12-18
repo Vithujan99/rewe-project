@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/rewe-project/static/css/main.38d490ad.css",
-    "main.js": "/rewe-project/static/js/main.188915de.js",
-    "static/js/796.96bb7a6d.chunk.js": "/rewe-project/static/js/796.96bb7a6d.chunk.js",
-    "static/js/165.bca10b4d.chunk.js": "/rewe-project/static/js/165.bca10b4d.chunk.js",
-    "static/js/453.21b5baf7.chunk.js": "/rewe-project/static/js/453.21b5baf7.chunk.js",
+    "main.css": "/rewe-project/static/css/main.2ceab1dc.css",
+    "main.js": "/rewe-project/static/js/main.26ad40d6.js",
+    "static/js/453.09db359c.chunk.js": "/rewe-project/static/js/453.09db359c.chunk.js",
     "static/media/Endt_KW50_24_web.pdf": "/rewe-project/static/media/Endt_KW50_24_web.480d9751d62735cd2fb3.pdf",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
     "static/media/rewe_von_außen.jpg": "/rewe-project/static/media/rewe_von_außen.8c0c8abc2a4f07756654.jpg",
     "static/media/Familie_Sieger_RB.png": "/rewe-project/static/media/Familie_Sieger_RB.60aefa40bd700a610267.png",
     "static/media/organic-tasty-vegetable-wicker-basket-sale-1920.jpg": "/rewe-project/static/media/organic-tasty-vegetable-wicker-basket-sale-1920.5edbc96cef34c7fd706c.jpg",
+    "static/media/Poppins-Regular.ttf": "/rewe-project/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Bold.ttf": "/rewe-project/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/bonus-app-logo.png": "/rewe-project/static/media/bonus-app-logo.0fb07e039769ed3e7c85.png",
     "static/media/Rewe_Dein_Markt_Logo.png": "/rewe-project/static/media/Rewe_Dein_Markt_Logo.e7b43d57726aa0f2c7a3.png",
     "static/media/Futura Bold.otf": "/rewe-project/static/media/Futura Bold.b3dd2dcb9b51257052ca.otf",
     "index.html": "/rewe-project/index.html",
-    "main.38d490ad.css.map": "/rewe-project/static/css/main.38d490ad.css.map",
-    "main.188915de.js.map": "/rewe-project/static/js/main.188915de.js.map",
-    "796.96bb7a6d.chunk.js.map": "/rewe-project/static/js/796.96bb7a6d.chunk.js.map",
-    "165.bca10b4d.chunk.js.map": "/rewe-project/static/js/165.bca10b4d.chunk.js.map",
-    "453.21b5baf7.chunk.js.map": "/rewe-project/static/js/453.21b5baf7.chunk.js.map"
+    "main.2ceab1dc.css.map": "/rewe-project/static/css/main.2ceab1dc.css.map",
+    "main.26ad40d6.js.map": "/rewe-project/static/js/main.26ad40d6.js.map",
+    "453.09db359c.chunk.js.map": "/rewe-project/static/js/453.09db359c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38d490ad.css",
-    "static/js/main.188915de.js"
+    "static/css/main.2ceab1dc.css",
+    "static/js/main.26ad40d6.js"
   ]
 }
