@@ -7,7 +7,9 @@ const JobsCards = () => {
   const { apiJobsData } = useContext(DataContext);
 
   const [anyJobs, setAnyJobs] = useState(false);
+
   useEffect(() => {
+    // Überprüfen, ob es Jobs gibt
     if (apiJobsData === null || apiJobsData.length === 0) {
       setAnyJobs(false);
     } else {
@@ -33,11 +35,14 @@ const JobsCards = () => {
                 <h2>Aktuell offene Jobs</h2>
                 <div className="jobs-container">
                   {apiJobsData.map((job) => (
-                    <div className="jobs-card" key={job._id}>
-                      <h3>{job.name}</h3>
+                    <div className="jobs-card" key={job.sys.id}>
+                      {" "}
+                      {/* Benutze sys.id für die eindeutige Identifikation */}
+                      <h3>{job.fields.name}</h3>{" "}
+                      {/* Greife auf das 'name' Feld zu */}
                       <Link
                         className="job-card-button"
-                        to={`/Karriere/${job._id}`}
+                        to={`/Karriere/${job.sys.id}`} // Verwende sys.id für den Link
                       >
                         Mehr Erfahren
                       </Link>

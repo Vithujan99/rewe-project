@@ -4,7 +4,7 @@ import { DataContext } from "../../../contexts/DataContext";
 
 const CareerHero = () => {
   const { apiImgData } = useContext(DataContext);
-  const data = apiImgData.find((img) => img.name === "career-hero-img");
+  const data = apiImgData.find((img) => img.fields.name === "career-hero-img");
 
   // If data is not ready, return null to render nothing
   if (!data) {
@@ -13,7 +13,11 @@ const CareerHero = () => {
 
   return (
     <div className="hero">
-      <img className="hero-img" src={data.bild.asset.url} alt={data.name} />
+      <img
+        className="hero-img"
+        src={data.fields.bild.fields.file.url} // Hole das Bild von Contentful
+        alt={data.fields.name} // Alternative Beschreibung für das Bild
+      />
       <div className="hero-text-content">
         <div className="container">
           <div className="hero-text-content-center">
@@ -24,5 +28,4 @@ const CareerHero = () => {
     </div>
   );
 };
-
 export default CareerHero;

@@ -5,6 +5,7 @@ import managerimg from "../../../images/manager.png";
 import rewe_außen from "../../../images/rewe_von_außen.jpg";
 import { DataContext } from "../../../contexts/DataContext";
 import Masonry from "react-masonry-css";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 const AboutFlexBox = () => {
   const breakpointColumnsObj = {
@@ -103,35 +104,37 @@ const AboutFlexBox = () => {
           columnClassName="my-masonry-grid_column"
         >
           {apiEmployeeData.map((employee) => {
-            if (employee.biotext !== null) {
+            if (employee.fields.biotext !== undefined) {
               return (
-                <div className="employee-card-biotext" key={employee._id}>
+                <div className="employee-card-biotext" key={employee.sys.id}>
                   <div className="ecb-top">
                     <img
                       className="ecb-img"
-                      src={employee.profilbild.asset.url}
-                      alt={employee.name}
+                      src={employee.fields.profilbild.fields.file.url}
+                      alt={employee.fields.name}
                     />
                     <div className="ecb-text-holder">
-                      <h4 className="ecb-titel">{employee.name}</h4>
-                      <p className="ecb-position">{employee.position}</p>
+                      <h4 className="ecb-titel">{employee.fields.name}</h4>
+                      <p className="ecb-position">{employee.fields.position}</p>
                     </div>
                   </div>
 
-                  <p className="ecb-bottom">{employee.biotext}</p>
+                  <p className="ecb-bottom">
+                    {documentToReactComponents(employee.fields.biotext)}
+                  </p>
                 </div>
               );
             } else {
               return (
-                <div className="employee-card" key={employee._id}>
+                <div className="employee-card" key={employee.sys.id}>
                   <img
                     className="ec-img"
-                    src={employee.profilbild.asset.url}
-                    alt={employee.name}
+                    src={employee.fields.profilbild.fields.file.url}
+                    alt={employee.fields.name}
                   />
                   <div className="ec-text-holder">
-                    <h4 className="ec-titel">{employee.name}</h4>
-                    <p className="ec-position">{employee.position}</p>
+                    <h4 className="ec-titel">{employee.fields.name}</h4>
+                    <p className="ec-position">{employee.fields.position}</p>
                   </div>
                 </div>
               );

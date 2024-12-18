@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  margin-top: 50px;
+  min-height: calc(100vh - 100px);
 }
 .jobDetail-content-holder {
   width: 100%; /* Content takes full width, pushing button to the right */
@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.jobDetail-content-holder h1 {
+  padding-bottom: 20px;
 }
 .jobDetail-content-holder h2 {
   padding-top: 10px;

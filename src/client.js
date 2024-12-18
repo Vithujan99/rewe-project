@@ -1,9 +1,11 @@
-import client from "@sanity/client";
-const sID = process.env.REACT_APP_SANITY_PROJECT_ID;
+// contentfulClient.js
+import { createClient } from "contentful";
+const cID = process.env.REACT_APP_CONTENTFUL_SPACE_ID;
+const cAT = process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN;
 
-export default client({
-  projectId: sID,
-  dataset: "production",
-  useCdn: true,
-  apiVersion: "2024-11-27",
+const client = createClient({
+  space: cID, // Dein Contentful Space ID
+  accessToken: cAT, // Dein Contentful Access Token
 });
+
+export default client;

@@ -104,15 +104,66 @@ const Datenschutz = () => {
           Ihre personenbezogenen Daten gegen Verlust, Diebstahl und unbefugten
           Zugriff zu schützen.
         </p>
+        <h2>9. Nutzung von GitHub Pages</h2>
+        <p>
+          Diese Webseite wird über **GitHub Pages** gehostet, einen Dienst von
+          **GitHub, Inc.** (Adresse: 88 Colin P. Kelly Jr. Street, San
+          Francisco, CA 94107, USA). GitHub kann bei der Bereitstellung des
+          Hosting-Dienstes bestimmte technische Daten wie IP-Adressen,
+          Server-Logs und andere Metadaten verarbeiten. Diese Daten werden in
+          der Regel zu Zwecken der Bereitstellung und Optimierung des Dienstes
+          sowie zur Fehlerbehebung verwendet.
+        </p>
+        <p>
+          GitHub speichert diese Daten gemäß seiner eigenen
+          Datenschutzerklärung, die unter{" "}
+          <a
+            href="https://docs.github.com/en/github/site-policy/github-privacy-statement"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://docs.github.com/en/github/site-policy/github-privacy-statement
+          </a>{" "}
+          eingesehen werden kann.
+        </p>
+        <p>
+          Da GitHub ein Unternehmen mit Sitz in den USA ist, können
+          personenbezogene Daten in einem Drittstaat (außerhalb der EU/des EWR)
+          verarbeitet werden. GitHub hat jedoch geeignete Maßnahmen ergriffen,
+          um die Sicherheit und den Schutz Ihrer personenbezogenen Daten zu
+          gewährleisten, gemäß den geltenden Datenschutzvorschriften.
+        </p>
+        <h2>10. Verwendung von Contentful</h2>
+        <p>
+          Wir verwenden **Contentful**, ein Content-Management-System (CMS), um
+          Inhalte auf unserer Webseite bereitzustellen. Contentful verarbeitet
+          Daten im Auftrag von uns, um Inhalte wie Texte, Bilder und
+          Mitarbeiterinformationen anzuzeigen. Die Daten werden über die
+          Contentful-API abgerufen und auf unserer Webseite angezeigt.
+        </p>
+        <p>
+          Dabei können auch personenbezogene Daten verarbeitet werden,
+          insbesondere wenn Mitarbeiterinformationen (wie Name, Jobposition,
+          Bilder) angezeigt werden. Contentful selbst verarbeitet keine
+          personenbezogenen Daten zu Marketingzwecken und hat keinen Zugriff auf
+          Inhalte, die von uns auf der Webseite veröffentlicht werden, außer in
+          den Fällen, die zur Bereitstellung des CMS-Dienstes erforderlich sind.
+        </p>
+        <p>
+          Die Nutzung von Contentful erfolgt gemäß der Vereinbarung über die
+          Datenverarbeitung (DPA), die zwischen uns und Contentful abgeschlossen
+          wurde, um sicherzustellen, dass alle Datenschutzanforderungen gemäß
+          der **Datenschutz-Grundverordnung (DSGVO)** erfüllt werden.
+        </p>
 
-        <h2>9. Änderung der Datenschutzerklärung</h2>
+        <h2>11. Änderung der Datenschutzerklärung</h2>
         <p>
           Wir behalten uns vor, diese Datenschutzerklärung gelegentlich zu
           ändern, um sie an geänderte rechtliche Vorgaben oder Änderungen
           unserer Dienstleistungen anzupassen.
         </p>
 
-        <h2>10. Kontakt</h2>
+        <h2>12. Kontakt</h2>
         <p>
           Bei Fragen zur Verarbeitung Ihrer personenbezogenen Daten oder zur
           Ausübung Ihrer Rechte können Sie sich jederzeit an uns wenden:

@@ -36,6 +36,7 @@ const Offer = () => {
           Prospekt im neuen Fenster öffnen
         </a>
       </div>
+      {!isMobile && console.log()}
       {/* Embed PDF - Only show if screen width is >= 800px */}
       {/* 
       {!isMobile && (
