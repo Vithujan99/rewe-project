@@ -4,6 +4,10 @@ import siegerLogo from "../../images/Rewe_Dein_Markt_Logo.png";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+  const openConsentDialog = () => {
+    const Klaro = require("klaro");
+    Klaro.show(); // Zeigt den Klaro Consent Dialog an
+  };
   return (
     <div className="footer">
       <div className="container">
@@ -29,6 +33,9 @@ const Footer = () => {
               <NavLink className="footer-link" to="/Datenschutz">
                 Datenschutz
               </NavLink>
+              <div onClick={openConsentDialog} className="footer-link">
+                Datenschutzeinstellungen
+              </div>
             </div>
           </div>
         </div>

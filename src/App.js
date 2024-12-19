@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Navbar from "./components/Navbar/Navbar";
@@ -12,8 +12,14 @@ import Datenschutz from "./routes/FooterPages/Datenschutz/DatenSchutz";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import DelPickButton from "./components/DelPickButton/DelPickButton";
+import klaroConfig from "./config/klaro-config";
 
 function App() {
+  useEffect(() => {
+    // Klaro initialisieren
+    const Klaro = require("klaro");
+    Klaro.setup(klaroConfig);
+  }, []);
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -31,6 +37,7 @@ function App() {
       </Routes>
       <DelPickButton />
       <Footer></Footer>
+      <div id="klaro-consent"></div> {/* Klaro Consent-Dialog */}
     </div>
   );
 }
