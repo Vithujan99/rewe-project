@@ -92,7 +92,8 @@
     font-size: 18px;
   }
   .google-maps {
-    height: 700px !important; /* Erzwinge die Höhe */
+    flex: auto;
+    height: 350px; /* Erzwinge die Höhe */
   }
   .info-content p {
     font-size: 18px;

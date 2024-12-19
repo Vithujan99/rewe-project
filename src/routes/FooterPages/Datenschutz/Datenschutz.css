@@ -5,7 +5,7 @@
   margin-bottom: 75px;
 }
 .datenschutz h1 {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .datenschutz h2 {
   padding-top: 20px;
@@ -25,6 +25,6 @@
   }
   .datenschutz ul {
     padding: 5px;
-    padding-left: 20px;
+    padding-left: 15px;
   }
 }

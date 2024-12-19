@@ -38,7 +38,9 @@ const ContactInfo = () => {
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           ) : (
-            <p>Bitte stimmen Sie der Nutzung von Google Maps zu.</p>
+            <div className="info-content">
+              <p> Bitte stimmen Sie der Nutzung von Google Maps zu.</p>
+            </div>
           )}
 
           <div className="info-content">
