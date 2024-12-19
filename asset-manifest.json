@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rewe-project/static/css/main.2ceab1dc.css",
-    "main.js": "/rewe-project/static/js/main.26ad40d6.js",
+    "main.js": "/rewe-project/static/js/main.afd92e00.js",
     "static/js/453.09db359c.chunk.js": "/rewe-project/static/js/453.09db359c.chunk.js",
     "static/media/Endt_KW50_24_web.pdf": "/rewe-project/static/media/Endt_KW50_24_web.480d9751d62735cd2fb3.pdf",
     "static/media/manager.png": "/rewe-project/static/media/manager.11fd92ff4eef43a25639.png",
@@ -15,11 +15,11 @@
     "static/media/Futura Bold.otf": "/rewe-project/static/media/Futura Bold.b3dd2dcb9b51257052ca.otf",
     "index.html": "/rewe-project/index.html",
     "main.2ceab1dc.css.map": "/rewe-project/static/css/main.2ceab1dc.css.map",
-    "main.26ad40d6.js.map": "/rewe-project/static/js/main.26ad40d6.js.map",
+    "main.afd92e00.js.map": "/rewe-project/static/js/main.afd92e00.js.map",
     "453.09db359c.chunk.js.map": "/rewe-project/static/js/453.09db359c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ceab1dc.css",
-    "static/js/main.26ad40d6.js"
+    "static/js/main.afd92e00.js"
   ]
 }
