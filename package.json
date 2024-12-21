@@ -1,6 +1,7 @@
 {
   "name": "rewe",
   "version": "0.1.0",
+  "homepage": "https://Vithujan99.github.io/rewe-project",
   "private": true,
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^16.0.1",
