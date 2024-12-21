@@ -1,19 +1,25 @@
-// api/contentful.js für Vercel Serverless Function
-import { createClient } from "contentful";
+// Vercel Serverless Function
+const { createClient } = require("contentful");
 
 module.exports = async (req, res) => {
-  const cID = process.env.CONTENTFUL_SPACE_ID; // Direkt ohne `REACT_APP_` Präfix
-  const cAT = process.env.CONTENTFUL_ACCESS_TOKEN; // Access Token nur im Backend
-
   const client = createClient({
-    space: cID,
-    accessToken: cAT,
+    space: process.env.CONTENTFUL_SPACE_ID, // Dein Contentful Space ID
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // Dein Contentful Access Token
   });
 
   try {
-    const entries = await client.getEntries();
-    res.status(200).json(entries.items);
+    // Hier holen wir alle Jobs-Daten aus Contentful
+    const response = await client.getEntries({
+      content_type: "job", // Dein Content Type
+      select: "fields.name,fields.beschreibung,sys.id", // Wähle nur die benötigten Felder
+    });
+
+    // Sende die abgerufenen Daten an das Frontend zurück
+    res.status(200).json(response.items);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    // Fehlerbehandlung
+    res
+      .status(500)
+      .json({ error: "Fehler beim Abrufen der Daten von Contentful" });
   }
 };
