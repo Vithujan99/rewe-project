@@ -21,10 +21,10 @@ const Offer = () => {
     <div className="home-offer-section">
       <h2>Aktuelle Angebote & Exklusive Rabatte</h2>
       <p>
-        Jetzt, da du die <b>Rewe Bonus App</b> heruntergeladen hast, profitierst
-        du nicht nur von exklusiven Vorteilen, sondern auch von unseren
-        aktuellen, großartigen Angeboten! Nutze die Chance, noch mehr zu sparen
-        und spannende Aktionen zu entdecken – direkt in deiner App.
+        Jetzt, da du die <b>Rewe App</b> heruntergeladen hast, profitierst du
+        nicht nur von exklusiven Vorteilen, sondern auch von unseren aktuellen,
+        großartigen Angeboten! Nutze die Chance, noch mehr zu sparen und
+        spannende Aktionen zu entdecken – direkt in deiner App.
       </p>
       <div className="open-container">
         <a
