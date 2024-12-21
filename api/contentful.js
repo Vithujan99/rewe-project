@@ -8,14 +8,29 @@ module.exports = async (req, res) => {
   });
 
   try {
-    // Hier holen wir alle Jobs-Daten aus Contentful
-    const response = await client.getEntries({
-      content_type: "job", // Dein Content Type
+    // Abrufen der Daten für alle Content-Typen
+    const jobsResponse = await client.getEntries({
+      content_type: "job", // Content Type für Jobs
       select: "fields.name,fields.beschreibung,sys.id", // Wähle nur die benötigten Felder
     });
 
-    // Sende die abgerufenen Daten an das Frontend zurück
-    res.status(200).json(response.items);
+    const employeesResponse = await client.getEntries({
+      content_type: "mitarbeiter", // Content Type für Mitarbeiter
+      select:
+        "fields.name,fields.position,fields.biotext,fields.profilbild,sys.id", // Wähle die benötigten Felder
+    });
+
+    const imagesResponse = await client.getEntries({
+      content_type: "webBild", // Content Type für Bilder
+      select: "fields.name,fields.bild", // Wähle die benötigten Felder
+    });
+
+    // Rückgabe der gesammelten Daten
+    res.status(200).json({
+      jobs: jobsResponse.items,
+      employees: employeesResponse.items,
+      images: imagesResponse.items,
+    });
   } catch (err) {
     // Fehlerbehandlung
     res
