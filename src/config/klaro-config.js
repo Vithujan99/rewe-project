@@ -3,6 +3,8 @@ const klaroConfig = {
   elementID: "klaro-consent", // ID des HTML-Elements, in dem Klaro angezeigt wird
   storageMethod: "localStorage", // Speichermethode (localStorage oder cookie)
   cookieName: "klaro-consent", // Name des Cookies
+  lang: "de",
+  langSwitcher: true,
   services: [
     {
       name: "google-analytics",
@@ -15,38 +17,62 @@ const klaroConfig = {
     {
       name: "marketo",
       title: "Marketo",
-      purposes: ["marketing"], // Zweck des Dienstes
-      cookies: ["_mkto_trk"], // Cookies, die von Marketo gesetzt werden
-      required: false, // Zustimmung ist nicht erforderlich
-      optOut: true, // Nutzer können den Dienst ablehnen
+      purposes: ["marketing"],
+      cookies: ["_mkto_trk"],
+      required: false,
+      optOut: true,
     },
     {
       name: "iub-cs",
       title: "IUB Consent Management",
-      purposes: ["consent-management"], // Zweck des Dienstes
-      cookies: ["_iub_cs-s3873356"], // Cookie von IUB CMP
-      required: false, // Zustimmung ist nicht erforderlich
-      optOut: true, // Nutzer können den Dienst ablehnen
+      purposes: ["consent-management"],
+      cookies: ["_iub_cs-s3873356"],
+      required: false,
+      optOut: true,
     },
     {
       name: "google-maps",
       title: "Google Maps",
-      purposes: ["maps"], // Zweck des Dienstes
-      cookies: [], // Google Maps setzt keine eigenen Cookies
-      required: false, // Zustimmung ist nicht erforderlich
-      optOut: false, // Nutzer können den Dienst nicht ablehnen
+      purposes: ["maps"],
+      cookies: [],
+      required: false,
+      optOut: false,
     },
   ],
   translations: {
     en: {
       consentModal: {
+        title: "Privacy Settings",
         description: "Here you can decide which services you allow us to use.",
+      },
+      services: {
+        "google-analytics": {
+          description: "Analytics service by Google.",
+        },
+        marketo: {
+          description: "Marketing automation platform by Marketo.",
+        },
+        "google-maps": {
+          description: "Map service by Google.",
+        },
       },
     },
     de: {
       consentModal: {
+        title: "Datenschutzeinstellungen",
         description:
           "Hier können Sie entscheiden, welche Dienste wir nutzen dürfen.",
+      },
+      services: {
+        "google-analytics": {
+          description: "Analysedienst von Google.",
+        },
+        marketo: {
+          description: "Marketing-Automatisierungsplattform von Marketo.",
+        },
+        "google-maps": {
+          description: "Kartendienst von Google.",
+        },
       },
     },
   },
