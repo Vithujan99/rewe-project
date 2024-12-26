@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import siegerLogo from "../../images/Rewe_Dein_Markt_Logo.png";
+import siegerLogo from "../../images/Rewe_Dein_Markt_Logo.webp";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {

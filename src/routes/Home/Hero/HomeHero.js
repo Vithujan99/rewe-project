@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomeHero.css";
 import heroimg from "../../../images/rewe_von_außen.webp";
-import siegerLogo from "../../../images/Rewe_Dein_Markt_Logo.png";
+import siegerLogo from "../../../images/Rewe_Dein_Markt_Logo.webp";
 import { motion } from "framer-motion";
 
 const HomeHero = () => {
