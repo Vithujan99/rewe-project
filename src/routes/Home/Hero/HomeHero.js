@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomeHero.css";
-import heroimg from "../../../images/rewe_von_außen.jpg";
+import heroimg from "../../../images/rewe_von_außen.webp";
 import siegerLogo from "../../../images/Rewe_Dein_Markt_Logo.png";
 import { motion } from "framer-motion";
 
