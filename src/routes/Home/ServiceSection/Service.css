@@ -1,5 +1,4 @@
 .service {
-  height: 100vh;
   width: 100vw;
   padding: 75px 7.5%;
   display: flex;
@@ -8,6 +7,9 @@
   gap: 20px;
   background-color: var(--color-primary);
   color: white;
+}
+.service h2 {
+  text-align: center;
 }
 .service p {
   margin-bottom: 15px;
@@ -21,15 +23,56 @@
 }
 .service-card {
   width: 300px;
-  height: 450px;
+  height: 350px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid white;
   border-radius: 15px;
   cursor: pointer;
 }
 .sc-icon {
   font-size: 200px;
+}
+@media (max-width: 800px) {
+  .service {
+    padding: 50px 5%;
+    gap: 15px;
+  }
+  .service p {
+    margin-bottom: 10px;
+  }
+  .service-card-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .service-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sc-icon {
+    font-size: 200px;
+  }
+}
+
+/*Mobile umgedreht*/
+@media (max-height: 600px) {
+  .rewe-app-section {
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-rbonus-one);
+    padding: 50px 5%;
+  }
+
+  .ras-ch-left {
+    gap: 10px;
+    padding: 20px 20px;
+    z-index: 10;
+  }
 }
