@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactHero.css";
-import heroimg from "../../../images/organic-tasty-vegetable-wicker-basket-sale-1920.jpg";
+import heroimg from "../../../images/organic-tasty-vegetable-wicker-basket-sale-1920.webp";
 
 const ContactHero = () => {
   return (

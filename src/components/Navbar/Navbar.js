@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import siegerLogo from "../../images/Familie_Sieger_RB.png";
+import siegerLogo from "../../images/Familie_Sieger_RB.webp";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);

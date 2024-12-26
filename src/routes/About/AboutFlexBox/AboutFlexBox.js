@@ -26,7 +26,7 @@ const AboutFlexBox = () => {
           />
 
           <div class="desc">
-            <h4 class="titel">Unsere Geschichte</h4>
+            <h2 class="titel">Unsere Geschichte</h2>
             <p class="biotext">
               A biography, or simply bio, is a detailed description of a
               person's life. It involves more than just basic facts like
@@ -55,7 +55,7 @@ const AboutFlexBox = () => {
       <div class="container">
         <div class="manager-container">
           <div class="desc">
-            <h4 class="titel">Geschäftsführer Sascha Sieger</h4>
+            <h2 className="titel">Geschäftsführer Sascha Sieger</h2>
             <p class="biotext">
               A biography, or simply bio, is a detailed description of a
               person's life. It involves more than just basic facts like
