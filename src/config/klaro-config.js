@@ -38,6 +38,14 @@ const klaroConfig = {
       required: false,
       optOut: false,
     },
+    {
+      name: "session-storage",
+      title: "Session Storage",
+      purposes: ["functional"], // Zweck des Dienstes
+      cookies: [], // Keine Cookies, aber Klaro erwartet dieses Feld
+      required: true, // Kann als notwendig markiert werden
+      optOut: false, // Opt-out ist nicht möglich, da es für Funktionalität genutzt wird
+    },
   ],
   translations: {
     en: {
@@ -54,6 +62,9 @@ const klaroConfig = {
         },
         "google-maps": {
           description: "Map service by Google.",
+        },
+        "session-storage": {
+          description: "Stores session data temporarily for functionality.",
         },
       },
     },
@@ -72,6 +83,10 @@ const klaroConfig = {
         },
         "google-maps": {
           description: "Kartendienst von Google.",
+        },
+        "session-storage": {
+          description:
+            "Speichert Sitzungsdaten vorübergehend für Funktionalität.",
         },
       },
     },

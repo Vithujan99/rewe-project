@@ -57,7 +57,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 10%;
+    object-position: 0;
   }
   .homehero-text-content {
     width: 300px;

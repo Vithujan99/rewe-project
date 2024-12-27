@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutHero.css";
-import heroimg from "../../../images/rewe_von_außen.jpg";
+import heroimg from "../../../images/rewe_von_außen.webp";
 
 const AboutHero = () => {
   return (

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomeHero.css";
 import heroimg from "../../../images/rewe_von_außen.webp";
+import mobileHeroimg from "../../../images/rewe_von_außen_vertikal.webp";
 import siegerLogo from "../../../images/Rewe_Dein_Markt_Logo.webp";
 import { motion } from "framer-motion";
 
@@ -9,7 +10,7 @@ const HomeHero = () => {
   const [firstVisit, setFirstVisit] = useState(
     sessionStorage.getItem("hasVisited")
   );
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
   useEffect(() => {
     const hasVisited = sessionStorage.getItem("hasVisited");
     if (!hasVisited) {
@@ -17,7 +18,18 @@ const HomeHero = () => {
       sessionStorage.setItem("hasVisited", "true");
       setFirstVisit(sessionStorage.getItem("hasVisited"));
     }
-    console.log("Only once");
+    // Handle screen resize
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+    };
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const heroImgVariants = {
@@ -105,7 +117,7 @@ const HomeHero = () => {
       <div id="home-hero-black-screen" />
       <motion.img
         id="homehero-img"
-        src={heroimg}
+        src={isMobile ? mobileHeroimg : heroimg}
         alt="Rewe Filiale von Außen"
         variants={heroImgVariants}
         initial="hidden"
