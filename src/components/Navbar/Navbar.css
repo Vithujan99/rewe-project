@@ -45,6 +45,7 @@
 
 .logo-holder-img {
   height: 90px;
+  width: auto;
   transition: all 0.5s ease;
   border-radius: 15px;
 }
